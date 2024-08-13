@@ -39,3 +39,24 @@
     font-weight: 900;
     font-style: normal;
 }
+
+.boya-alternative{
+    font-family: 'BOYA alternative';
+}
+
+
+.work-sans-bold {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: 'BOYA alternative';
+    src: url('BOYAalternative-Regular.woff2') format('woff2'),
+        url('BOYAalternative-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}

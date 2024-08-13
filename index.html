@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;300;400;500;700;800;900&display=swap"
         rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital@0;1&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="./assets/css/styles.css" />
 
@@ -19,43 +20,320 @@
     <title>Meta Pixel</title>
 </head>
 
-<body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark navbar-fixed">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">
-                <img src="assets/images/logo.svg" alt="Logo" class="img-fluid" />
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav ms-auto">
-                    <a class="nav-link active" aria-current="page" href="main-header">Home</a>
-                    <a class="nav-link" href="#works">Works</a>
-                    <a class="nav-link" href="#services">Services</a>
-                    <a class="nav-link" href="#about">About</a>
-                    <a class="nav-link" href="#about">About</a>
-                    <a class="nav-link" href="#contact_us">Contact Us</a>
+<body class="bg-dark">
+
+    <!-- Header -->
+    <header id="main-header" class="header-wrapper">
+        <!-- Navbar -->
+        <nav
+            class="navbar navbar-expand-md navbar-dark bg-transparent navbar-fixed px-5 navbar-custom w-100 position-fixed">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/images/logo.svg" alt="Logo" class="img-fluid" />
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ms-auto">
+                        <a class="nav-link px-md-3 px-lg-4 active" aria-current="page" href="main-header">Home</a>
+                        <a class="nav-link px-md-3 px-lg-4" href="#works">Works</a>
+                        <a class="nav-link px-md-3 px-lg-4" href="#services">Services</a>
+                        <a class="nav-link px-md-3 px-lg-4" href="#about">About</a>
+                        <a class="nav-link px-md-3 px-lg-4" href="#about">About</a>
+                        <a class="nav-link px-md-3 px-lg-4" href="#contact_us">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div
+            class="d-flex flex-column align-items-center justify-content-center flex-grow-1 text-center position-relative">
+            <h1 class="boya-alternative text-uppercase header__title">Meta Pixel</h1>
+            <p class="m-plus-1p-medium text-uppercase mb-0 header__subTitle">Unleashing Extraordinary Experiences.</p>
+            <p class="m-plus-1p-medium text-uppercase header__subTitle">Where Every Event Becomes an <span
+                    class="text-main">Unforgettable Spectacle!</span></p>
+        </div>
+    </header>
+    <!-- About -->
+    <section id="about" class="about container-fluid p-sm-5 px-4">
+        <div class="row align-items-center">
+            <div class="col-12 col-md-6">
+                <h2 class="sec-title text-uppercase">About Us</h2>
+                <div class="m-plus-1p-medium my-5">
+                    <p>Welcome to <span class="text-main text-uppercase m-plus-1p-black">META PIXEL</span>, where we
+                        specialize in turning ordinary events into extraordinary experiences. With a passion for
+                        creativity and a commitment to excellence, we bring your visions to life through meticulously
+                        planned and flawlessly executed shows and events.</p>
+                    <p>Our team of dedicated professionals boasts years of experience in the industry, ensuring that
+                        every detail is perfectly tailored to meet your needs. From corporate gatherings and grand
+                        celebrations to intimate gatherings and themed parties, we deliver unforgettable moments that
+                        leave a lasting impression.</p>
+                    <p>At <span class="text-main text-uppercase m-plus-1p-black">META PIXEL</span>, we believe that
+                        every event tells a story. Let us help you create yours with our innovative ideas, top-notch
+                        service, and unwavering dedication to making your event truly spectacular. Join us and discover
+                        the magic of unforgettable experiences.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="">
+                    <img src="./assets/images/about.png" alt="about" class="img-fluid">
                 </div>
             </div>
         </div>
-    </nav>
-
-    <!-- Header -->
-    <header id="main-header">
-    </header>
-    <!-- About -->
-    <section id="about" class="about"></section>
+    </section>
     <!-- Services -->
-    <section id="services" class="services"></section>
+    <section id="services" class="services container-fluid p-sm-5 px-4">
+        <div class="d-flex justify-content-between align-items-start flex-column flex-lg-row">
+            <h2 class="sec-title text-uppercase">Services</h2>
+            <button type="button" class="btn btn-shadow text-uppercase work-sans-bold text-main py-2 px-4 my-4">
+                <img src="./assets/images/ArrowRight.svg" alt="arrow" class="img-fluid">
+                View all Services</button>
+        </div>
+        <div class="row mt-4">
+            <div class="col-12 col-md-6 col-lg-3 mx-0 my-2">
+                <div class="bg-gradient px-4 py-5 rounded-xl h-100 d-flex flex-column justify-content-between">
+                    <div>
+                        <div class="icon-container mb-4">
+                            <img src="./assets/images/Vector.svg" alt="" class="img-fluid w-100">
+                        </div>
+                        <h3 class="text-uppercase m-plus-1p-medium">Hologram</h3>
+                        <p class="m-plus-1p-medium">Brings cutting-edge 3D visuals to life, creating captivating and
+                            interactive experiences for your audience...</p>
+                    </div>
+                    <div class="text-end">
+                        <img src="./assets/images/ArrowRight.svg" alt="arrow" class="img-fluid">
+                        <a href="#" class="text-main m-plus-1p-bold link">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mx-0 my-2">
+                <div class="bg-gradient px-4 py-5 rounded-xl h-100  d-flex flex-column justify-content-between">
+                    <div>
+                        <div class="icon-container mb-4">
+                            <img src="./assets/images/Slideshow.svg" alt="" class="img-fluid w-100">
+                        </div>
+                        <h3 class="text-uppercase m-plus-1p-medium">Projection mapping</h3>
+                        <p class="m-plus-1p-medium">Turns any surface into a dynamic visual canvas, creating immersive
+                            and unforgettable ...</p>
+                    </div>
+                    <div class="text-end">
+                        <img src="./assets/images/ArrowRight.svg" alt="arrow" class="img-fluid">
+                        <a href="#" class="text-main m-plus-1p-bold link">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mx-0 my-2">
+                <div class="bg-gradient px-4 py-5 rounded-xl h-100  d-flex flex-column justify-content-between">
+                    <div>
+                        <div class="icon-container mb-4">
+                            <img src="./assets/images/arcticons_ask-ai.svg" alt="" class="img-fluid w-100">
+                        </div>
+                        <h3 class="text-uppercase m-plus-1p-medium">Content creation</h3>
+                        <p class="m-plus-1p-medium">Service delivers engaging and high-quality material tailored to your
+                            brand's voice and audience...</p>
+                    </div>
+                    <div class="text-end">
+                        <img src="./assets/images/ArrowRight.svg" alt="arrow" class="img-fluid">
+                        <a href="#" class="text-main m-plus-1p-bold link">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mx-0 my-2">
+                <div class="bg-gradient px-4 py-5 rounded-xl h-100  d-flex flex-column justify-content-between">
+                    <div>
+                        <div class="icon-container mb-4">
+                            <img src="./assets/images/Cube.svg" alt="" class="img-fluid w-100">
+                        </div>
+                        <h3 class="text-uppercase m-plus-1p-medium">3d animation</h3>
+                        <p class="m-plus-1p-medium">3D animation service crafts lifelike visuals that captivate and
+                            engage, bringing your ideas to vivid life...</p>
+                    </div>
+                    <div class="text-end">
+                        <img src="./assets/images/ArrowRight.svg" alt="arrow" class="img-fluid">
+                        <a href="#" class="text-main m-plus-1p-bold link">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
     <!-- Works -->
-    <section id="works" class="works"></section>
+    <section id="works" class="works container-fluid p-sm-5 px-4">
+        <div class="d-flex justify-content-between align-items-start flex-column flex-lg-row">
+            <h2 class="sec-title text-uppercase">Our works</h2>
+            <button type="button" class="btn btn-gradient text-uppercase work-sans-bold text-main py-2 px-4 my-4">
+                <img src="./assets/images/ArrowRight.svg" alt="arrow" class="img-fluid">
+                View all projects</button>
+        </div>
+        <div class="works-grid-container mt-4">
+            <div class="box">
+                <div class="box-img-wrapper w-100">
+                    <img src="./assets/images/frame1.png" alt="project" class="img-fluid w-100">
+                </div>
+                <div class="px-3">
+                    <h4 class="m-plus-1p-black mt-3">Project Name</h4>
+                    <div class="d-flex flex-column justify-content-between flex-grow-1 m-plus-1p-medium">
+                        <p class="mt-2">2 lines for project description here..Short 2 lines for project description
+                            here..</p>
+                        <div class="mb-4">
+                            <img src="./assets/images/ArrowRight.svg" alt="arrow" class="img-fluid">
+                            <a href="#" class="text-main m-plus-1p-bold link">View full project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-img-wrapper w-100">
+                    <img src="./assets/images/frame2.png" alt="project" class="img-fluid w-100">
+                </div>
+                <div class="px-3">
+                    <h4 class="m-plus-1p-black mt-3">Project Name</h4>
+                    <div class="d-flex flex-column justify-content-between flex-grow-1 m-plus-1p-medium">
+                        <p class="mt-2">2 lines for project description here..Short 2 lines for project description
+                            here..</p>
+                        <div class="mb-4">
+                            <img src="./assets/images/ArrowRight.svg" alt="arrow" class="img-fluid">
+                            <a href="#" class="text-main m-plus-1p-bold link">View full project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-img-wrapper w-100">
+                    <img src="./assets/images/frame3.png" alt="project" class="img-fluid w-100">
+                </div>
+                <div class="px-3">
+                    <h4 class="m-plus-1p-black mt-3">Project Name</h4>
+                    <div class="d-flex flex-column justify-content-between flex-grow-1 m-plus-1p-medium">
+                        <p class="mt-2">2 lines for project description here..Short 2 lines for project description
+                            here..</p>
+                        <div class="mb-4">
+                            <img src="./assets/images/ArrowRight.svg" alt="arrow" class="img-fluid">
+                            <a href="#" class="text-main m-plus-1p-bold link">View full project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-img-wrapper w-100">
+                    <img src="./assets/images/frame4.png" alt="project" class="img-fluid w-100">
+                </div>
+                <div class="px-3">
+                    <h4 class="m-plus-1p-black mt-3">Project Name</h4>
+                    <div class="d-flex flex-column justify-content-between flex-grow-1 m-plus-1p-medium">
+                        <p class="mt-2">2 lines for project description here..Short 2 lines for project description
+                            here..</p>
+                        <div class="mb-4">
+                            <img src="./assets/images/ArrowRight.svg" alt="arrow" class="img-fluid">
+                            <a href="#" class="text-main m-plus-1p-bold link">View full project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- Get in Touch -->
-    <section id="contact_us" class="contact_us"></section>
+    <section id="contact_us" class="contact_us container-fluid p-sm-5 px-4">
+        <h2 class="sec-title text-uppercase">Get in touch</h2>
+        <div class="row mt-4">
+            <div class="col-12 me-md-auto col-md-5">
+                <h4 class="text-uppercase text-main m-plus-1p-medium">Looking for the best security services provider?
+                    Your search is over.</h4>
+                <hr>
+                <ul class="list-none">
+                    <li class="d-flex align-items-center my-2">
+                        <img src="./assets/images/EnvelopeOpen.svg" alt="email" class="img-fluid">
+                        <span class="px-2 m-plus-1p-bold text-uppercase contact_us-list__txt">hr@metapixel.com</span>
+                    </li>
+                    <li class="d-flex align-items-center my-2">
+                        <img src="./assets/images/Phone.svg" alt="email" class="img-fluid">
+                        <span class="px-2 m-plus-1p-bold text-uppercase contact_us-list__txt">+00000000 - 0000000</span>
+                    </li>
+                    <li class="d-flex align-items-center my-2">
+                        <img src="./assets/images/MapPinLine.svg" alt="email" class="img-fluid">
+                        <span class="px-2 m-plus-1p-bold text-uppercase contact_us-list__txt">Abd El-Salam Aref, San
+                            Stefano, El Raml 1, Alexandria Governorate,Egypt</span>
+                    </li>
+
+                </ul>
+
+            </div>
+            <div class="col-12 col-md-6">
+                <form class="row m-plus-1p-medium text-gray-md">
+                    <div class="form-group col-6 my-2">
+                        <label for="username" class="contact_us-label mb-2">Name</label>
+                        <input type="text" class="form-control contact_us-form-control" id="username"
+                            placeholder="Your name here">
+                    </div>
+                    <div class="form-group col-6 my-2">
+                        <label for="email1" class="contact_us-label mb-2">Email</label>
+                        <input type="email" class="form-control contact_us-form-control" id="email1"
+                            aria-describedby="emailHelp" placeholder="example@email.com">
+                    </div>
+
+                    <div class="form-group col-12 my-2">
+                        <label for="message" class="contact_us-label mb-2">Message</label>
+                        <textarea class="form-control contact_us-form-control resize-none" id="message" rows="3"
+                            placeholder="Text here"></textarea>
+                    </div>
+                    <div class="col-12 my-2">
+                        <button type="button"
+                            class="btn btn-gradient w-100 text-main text-uppercase m-plus-1p-bold py-2">Submit</button>
+                    </div>
+
+                </form>
+
+            </div>
+        </div>
+    </section>
     <!-- Footer -->
-    <footer></footer>
+    <footer>
+        <div class="container-fluid px-5 pb-3">
+
+            <div class="row m-plus-1p-medium">
+                <div class="col-12 col-md-6">
+                    <div class="logo-wrapper">
+                        <img src="assets/images/logo.svg" alt="Logo" class="img-fluid" />
+                    </div>
+                    <p class="text-gray-md copy-right-txt my-4">© 2024 Metapixel, All Rights Reserved.</p>
+                </div>
+                <div class="col-12 col-md-6">
+                    <h4 class="text-gray-md text-uppercase mb-4">Follow us</h4>
+                    <ul class="list-none grid-media-list">
+                        <li class="pe-2 text-start">
+                            <img src="./assets/images/FacebookLogo.svg" alt="facebook" class="img-fluid">
+                        </li>
+                        <li>
+                            <img src="./assets/images/LinkedinLogo.svg" alt="facebook" class="img-fluid">
+                        </li>
+                        <li>
+                            <img src="./assets/images/PinterestLogo.svg" alt="facebook" class="img-fluid">
+                        </li>
+                        <li>
+                            <img src="./assets/images/XLogo.svg" alt="facebook" class="img-fluid">
+                        </li>
+                        <li>
+                            <img src="./assets/images/YoutubeLogo.svg" alt="facebook" class="img-fluid">
+                        </li>
+                        <li>
+                            <img src="./assets/images/TiktokLogo.svg" alt="facebook" class="img-fluid">
+                        </li>
+                        <li>
+                            <img src="./assets/images/TumblrLogo.svg" alt="facebook" class="img-fluid">
+                        </li>
+                        <li>
+                            <img src="./assets/images/MetaLogo.svg" alt="facebook" class="img-fluid">
+                        </li>
+                        <li>
+                            <img src="./assets/images/InstagramLogo.svg" alt="facebook" class="img-fluid">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <!-- Popper and Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
