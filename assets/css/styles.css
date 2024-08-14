@@ -1,10 +1,227 @@
 @import './variables.css';
 @import './fonts.css';
 
-body{
-    color: var(--gray);
+body {
+    color: var(--gray-light);
     font-size: var(--main-font-size);
     font-weight: var(--main-font-weight);
     font-family: var(--font-family-mplus);
     position: relative;
+}
+
+/* global styles  */
+.text-main {
+    color: var(--main-color);
+}
+
+.sec-title {
+    color: var(--secondary-color);
+    font-family: 'BOYA alternative';
+    font-size: 5rem;
+    position: relative;
+}
+
+.sec-title::after {
+    text-transform: uppercase;
+    position: absolute;
+    color: rgba(208, 188, 254, 1);
+    opacity: 0.15;
+    font-size: 16rem;
+    line-height: 0.5;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.btn-shadow {
+    box-shadow: 0px 4px 40px 0px rgba(234, 221, 255, 0.4);
+}
+
+.btn:hover {
+    color: var(--main-color) !important;
+}
+
+.btn-gradient {
+    background-image: linear-gradient(to right, rgba(197, 163, 224, 0.2), rgba(102, 36, 131, 0.2)) !important;
+}
+
+.bg-gradient {
+    background-image: linear-gradient(to right, rgba(107, 81, 138, 0), #352744, rgba(107, 81, 138, 0)) !important;
+    box-shadow: 0px 4px 15px 0px rgba(234, 221, 255, 0.2);
+}
+
+.rounded-xl {
+    border-radius: 1rem;
+}
+
+.list-none {
+    list-style: none;
+    padding: 0;
+}
+
+.resize-none{
+    resize: none;
+}
+
+/* nav style */
+.navbar-custom {
+    background-color: rgb(22 22 22 / 40%) !important;
+    z-index: 2;
+}
+
+.nav-link.active {
+    color: var(--main-color) !important;
+    position: relative;
+}
+
+.nav-link.active::after {
+    content: "";
+    position: absolute;
+    width: 3rem;
+    height: 1px;
+    background-color: var(--main-color);
+    color: var(--main-color);
+    bottom: -1rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* header style  */
+.header-wrapper {
+    height: 100vh;
+    background-image: url('../images/img1.jfif');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+}
+
+/* TODO: to be removed when putting video  */
+.header-wrapper::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(22 22 22 / 60%) !important;
+}
+
+.header__title {
+    font-size: 6rem;
+    line-height: 0.5;
+}
+
+.header__subTitle {
+    font-size: 1.5rem;
+}
+
+/* about style */
+.about .sec-title::after {
+    content: 'About';
+}
+
+/* services style */
+.services .sec-title::after {
+    content: 'services';
+}
+
+.services .icon-container {
+    width: 5rem;
+}
+
+.link:hover {
+    color: var(--main-color);
+}
+
+/* work style */
+.works .sec-title::after {
+    content: 'works';
+}
+
+.works .works-grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.works-grid-container .box {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--gray-light);
+    border-radius: 8px;
+    height: 100%;
+    overflow: hidden;
+}
+
+
+/* contact_us style */
+.contact_us .sec-title::after {
+    content: 'in touch';
+}
+
+.contact_us-list__txt {
+    font-size: 0.75rem;
+}
+
+.contact_us-form-control {
+    background-color: transparent !important;
+    border: 1px solid var(--gray-medium);
+    color: var(--gray-light) !important;
+}
+
+.text-gray-md {
+    color: var(--gray-medium) !important;
+}
+
+/* footer style  */
+.copy-right-txt {
+    font-size: 0.85rem;
+}
+
+.grid-media-list {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    align-items: center;
+}
+
+.grid-media-list li {
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.grid-media-list li img {
+    width: 3rem;
+    height: 3rem;
+}
+
+
+@media (max-width: 1100px) {
+    .grid-media-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .grid-media-list li {
+        text-align: start;
+    }
+}
+
+@media (max-width: 768px) {
+    .works .works-grid-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .sec-title::after {
+        font-size: 13rem;
+    }
+    .nav-link.active::after {
+        bottom: 0;
+        left: 0%;
+        transform: translateX(0%);
+    }
+}
+
+@media (max-width: 530px) {
+    .sec-title::after {
+        font-size: 9rem;
+    }
 }

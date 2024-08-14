@@ -1,6 +1,11 @@
 :root{
     --main-color: #DB4FD7;
-    --gray: #ECF1F4;
+    --secondary-color: #D0BCFE;
+    --gray-light: #ECF1F4;
+    --gray-medium: #8C8CA1;
+    --gray-dark: #868686;
+    --main-bg:#141218;
     --main-font-size: 16px;
     --main-font-weight: 500;
+    --font-family-mplus:'M PLUS 1p';
 }
