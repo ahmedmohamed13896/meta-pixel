@@ -63,10 +63,50 @@ body {
     resize: none;
 }
 
+.bullet {
+    width: 15px;
+    height: 15px;
+    background-color: #3b3b49;
+    border-radius: 50%;
+    margin: 10px 0;
+    transition: background-color 0.7s ease, box-shadow 0.7s ease;
+}
+
+.bullet-wrap {
+    position: relative;
+    align-self: stretch;
+    width: fit-content;
+}
+
+.bullet-wrap::after {
+    position: absolute;
+    content: '';
+    width: 3px;
+    height: 100%;
+    left: 42%;
+    background-image: linear-gradient(to top, rgba(197, 163, 224, 0.2), rgba(102, 36, 131, 0.8), rgba(197, 163, 224, 0.2));
+    background-size: 100% 400%; 
+    background-position: 0 75%;
+    bottom: 0;
+    z-index: -1;
+}
+
+.bullet.active {
+    background-color: var(--gray-light);
+    box-shadow: 0px 0px 40px 10px rgba(234, 221, 255, 0.4) !important;
+}
+
+.logo-wrapper{
+    max-width: 6.5rem;
+}
 /* nav style */
 .navbar-custom {
-    background-color: rgb(22 22 22 / 40%) !important;
+    background-color: rgb(22 22 22 / 40%);
     z-index: 2;
+}
+
+.navbar-solid{
+    background-color: rgb(22 22 22);
 }
 
 .nav-link.active {
@@ -121,6 +161,13 @@ body {
     content: 'About';
 }
 
+.about .bullet-wrap::after {
+    border-top-right-radius: 2px;
+    border-top-left-radius: 2px;
+    background-position: 0 0%;
+}
+
+
 /* services style */
 .services .sec-title::after {
     content: 'services';
@@ -132,6 +179,10 @@ body {
 
 .link:hover {
     color: var(--main-color);
+}
+
+.services .bullet-wrap::after {
+    background-position: 0 75%; 
 }
 
 /* work style */
@@ -154,6 +205,9 @@ body {
     overflow: hidden;
 }
 
+.works .bullet-wrap::after {
+    background-position: 0 50%; 
+}
 
 /* contact_us style */
 .contact_us .sec-title::after {
@@ -174,7 +228,21 @@ body {
     color: var(--gray-medium) !important;
 }
 
+.contact_us .bullet-wrap::after {
+    background-position: 0 25%; 
+}
+
 /* footer style  */
+footer .bullet-wrap::after{
+    background-position: 0 100%; 
+    border-bottom-right-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+
+footer .bullet-wrap {
+        width: 15px;
+}
+
 .copy-right-txt {
     font-size: 0.85rem;
 }
@@ -210,9 +278,11 @@ body {
     .works .works-grid-container {
         grid-template-columns: repeat(1, 1fr);
     }
+
     .sec-title::after {
         font-size: 13rem;
     }
+
     .nav-link.active::after {
         bottom: 0;
         left: 0%;
@@ -225,3 +295,11 @@ body {
         font-size: 9rem;
     }
 }
+
+
+
+
+
+
+
+
