@@ -11,10 +11,6 @@
     line-height: 1;
 }
 
-.max-w-56 {
-    max-width: 56rem;
-}
-
 .work-details .line {
     padding: 2px;
     background-image: radial-gradient(circle at center, #ed62e9, rgb(61 12 60) 100%);

@@ -20,7 +20,7 @@ function updateNavbarStyle(section) {
 }
 
 function onScroll(isUpdateBullet) {
-    const headerHeight = HEADER?.offsetHeight || SECTION_WORKS?.offsetHeight || SECTION_PROJECT_DETAILS?.offsetHeight;
+    const headerHeight = HEADER?.offsetHeight || SECTION_WORKS?.offsetHeight || SECTION_PROJECT_DETAILS?.offsetHeight || SECTION_SERVICES_DETAILS?.offsetHeight;
     
     if (HEADER) {
         updateNavbarStyle(headerHeight);
