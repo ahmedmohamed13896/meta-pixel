@@ -1,4 +1,4 @@
-function activeSectionBullet() {
+function updateActiveBullet() {
     SECTIONS.forEach((section, index) => {
         const rect = section.getBoundingClientRect();
         const bullet = BULLETS[index];
@@ -10,8 +10,8 @@ function activeSectionBullet() {
     });
 }
 
-function changeNavbarStyle() {
-    if (window.scrollY >= HEADER) {
+function updateNavbarStyle(section) {
+    if (window.scrollY >= section) {
         NAV_BAR.classList.add('navbar-solid');
     } else {
         NAV_BAR.classList.remove('navbar-solid');
@@ -19,7 +19,18 @@ function changeNavbarStyle() {
 
 }
 
+function onScroll(isUpdateBullet) {
+    const headerHeight = HEADER?.offsetHeight || HEADER_WORKS?.offsetHeight;
+    if (HEADER) {
+        updateNavbarStyle(headerHeight);
+        isUpdateBullet && updateActiveBullet();
+    } else if (HEADER_WORKS) {
+        updateNavbarStyle(headerHeight);
+    }
+}
+
+onScroll(); // to update navbar if the user on different sectiom
+
 document.addEventListener('scroll', function () {
-    changeNavbarStyle();
-    activeSectionBullet();
+    onScroll(true);
 });
