@@ -63,6 +63,10 @@ body {
     resize: none;
 }
 
+.max-w-56 {
+    max-width: 56rem;
+}
+
 .bullet {
     width: 15px;
     height: 15px;
