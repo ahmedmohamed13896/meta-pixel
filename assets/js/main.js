@@ -2,7 +2,7 @@ function updateActiveBullet() {
     SECTIONS.forEach((section, index) => {
         const rect = section.getBoundingClientRect();
         const bullet = BULLETS[index];
-        if ((rect.top <= HALF_WINDOW_HEIGHT && rect.bottom >= HALF_WINDOW_HEIGHT) || (rect.top < FULL_WINDOW_HEIGHT && rect.bottom > 0)) {
+        if (rect.top <= HALF_WINDOW_HEIGHT) {
             bullet.classList.add('active');
         } else {
             bullet.classList.remove('active');
@@ -20,7 +20,7 @@ function updateNavbarStyle(section) {
 }
 
 function onScroll(isUpdateBullet) {
-    const headerHeight = HEADER?.offsetHeight || SECTION_WORKS?.offsetHeight || SECTION_PROJECT_DETAILS?.offsetHeight || SECTION_SERVICES_DETAILS?.offsetHeight;
+    const headerHeight = HEADER?.offsetHeight || SECTION_WORKS?.offsetHeight || SECTION_PROJECT_DETAILS?.offsetHeight || SECTION_SERVICES_DETAILS?.offsetHeight || SECTION_ABOUT?.offsetHeight;
     
     if (HEADER) {
         updateNavbarStyle(headerHeight);
@@ -35,3 +35,10 @@ onScroll(); // to update navbar if the user on different sectiom
 document.addEventListener('scroll', function () {
     onScroll(true);
 });
+
+BUTTON_SCROLL_DOWN.addEventListener('click', function(){
+    window.scrollTo({
+        top: FULL_WINDOW_HEIGHT, 
+        behavior: 'smooth'
+    });
+})

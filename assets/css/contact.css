@@ -1,0 +1,37 @@
+.contact__header {
+    padding: calc(100px + 8rem) 0 0;
+    background: linear-gradient(14deg, #141218 38.06%, #410E57 87.91%);
+    background-blend-mode: multiply;
+}
+
+.header__title{
+    font-size: 3.5rem;
+    line-height: 1.2;
+}
+.header__subTitle{
+    font-size: 1.3rem;
+    line-height: 1.2;
+}
+.map-section{
+    height: 650px;
+    width: 100%;
+    background-image: url(../images/contact/map.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 70%;
+    margin-top: -22.5%;
+    margin-bottom: -22.5%;
+
+}
+
+@media screen and (max-width: 992px) {
+    .header__title{
+        font-size: 2.5rem;
+    }
+    .map-section{
+        height: 400px;
+        margin-top: -25%;
+        margin-bottom: -25%;
+        background-size: 100%;
+    }
+}
