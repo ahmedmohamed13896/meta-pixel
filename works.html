@@ -28,7 +28,7 @@
 
 <body class="background-dark d-flex flex-column min-vh-100 works-page">
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-md navbar-dark navbar-fixed px-5 navbar-custom w-100 position-fixed top-0">
+    <nav id="main_navbar" class="navbar navbar-expand-md navbar-dark navbar-fixed px-5 navbar-custom w-100 position-fixed top-0">
         <div class="container-fluid">
             <a class="navbar-brand logo-wrapper" href="index.html">
                 <img src="assets/images/logo.svg" alt="Logo" class="img-fluid" />
@@ -48,143 +48,150 @@
             </div>
         </div>
     </nav>
-    <main class="flex-grow-1">
-        <!-- work-details -->
-        <section class="work-details">
-            <h2 class="sec-title text-uppercase">our work</h2>
-            <div class="text-uppercase max-w-56">
-                our portfolio showcases a rich variety of events that we've meticulously
-                planned and executed. From grand corporate gatherings to intimate private celebrations.
-                <hr class="line">
-            </div>
-            <div class="text-center work-details__icon-grid">
-                <div class="d-flex flex-column align-items-center">
-                    <div class="icon-wrap mb-2">
-                        <img src="./assets/images/works/Slideshow.svg" alt="Slideshow" class="img-fluid">
-                    </div>
-                    <div class="icon-txt text-uppercase m-plus-1p-medium text-gray-md">
-                        Projection mapping
-                    </div>
+    <!-- work-details -->
+    <section class="work-details">
+        <h2 class="sec-title text-uppercase">our work</h2>
+        <div class="text-uppercase max-w-56">
+            our portfolio showcases a rich variety of events that we've meticulously
+            planned and executed. From grand corporate gatherings to intimate private celebrations.
+            <hr class="line">
+        </div>
+    </section>
+    <!-- Filter -->
+    <section id="work_filter" class="text-center position-sticky work-details__icon-grid">
+        <div class="max-w-56 grid-view">
+            <div class="filter-item selected d-flex flex-column align-items-center">
+                <div class="icon-wrap mb-2">
+                    <img src="./assets/images/works/Slideshow.svg" alt="Slideshow" class="img-fluid">
+                    <img src="./assets/images/works/Slideshow-active.svg" alt="Slideshow" class="img-fluid active-img">
                 </div>
-                <div class="d-flex flex-column align-items-center">
-                    <div class="icon-wrap mb-2">
-                        <img src="./assets/images/works/stage design.svg" alt="Slideshow" class="img-fluid">
-                    </div>
-                    <div class="icon-txt text-uppercase m-plus-1p-medium text-gray-md">
-                        Stage design
-                    </div>
-                </div>
-                <div class="d-flex flex-column align-items-center">
-                    <div class="icon-wrap mb-2">
-                        <img src="./assets/images/works/arcticons_ask-ai.svg" alt="Slideshow" class="img-fluid">
-                    </div>
-                    <div class="icon-txt text-uppercase m-plus-1p-medium text-gray-md">
-                        Content creation
-                    </div>
-                </div>
-                <div class="d-flex flex-column align-items-center">
-                    <div class="icon-wrap mb-2">
-                        <img src="./assets/images/works/Cube.svg" alt="Slideshow" class="img-fluid">
-                    </div>
-                    <div class="icon-txt text-uppercase m-plus-1p-medium text-gray-md">
-                        3d animation
-                    </div>
-                </div>
-                <div class="d-flex flex-column align-items-center">
-                    <div class="icon-wrap mb-2">
-                        <img src="./assets/images/works/Sphere.svg" alt="Slideshow" class="img-fluid">
-                    </div>
-                    <div class="icon-txt text-uppercase m-plus-1p-medium text-main">
-                        Hologram
-                    </div>
-                </div>
-                <div class="d-flex flex-column align-items-center">
-                    <div class="icon-wrap mb-2">
-                        <img src="./assets/images/works/VFX icon.svg" alt="Slideshow" class="img-fluid">
-                    </div>
-                    <div class="icon-txt text-uppercase m-plus-1p-medium text-gray-md">
-                        VFX
-                    </div>
+                <div class="icon-txt text-uppercase m-plus-1p-medium">
+                    Projection mapping
                 </div>
             </div>
-        </section>
-        <!-- project-list -->
-        <section class="project-list">
-            <div class="container-fluid px-5">
-                <div class="grid">
-                    <div class="box">
-                        <div class="box-img-wrapper w-100">
-                            <img src="./assets/images/works/project1.png" alt="project" class="img-fluid w-100">
-                        </div>
-                        <div class="px-3">
-                            <h4 class="m-plus-1p-black mt-3">Project Name</h4>
-                            <div class="d-flex flex-column justify-content-between flex-grow-1 m-plus-1p-medium">
-                                <p class="mt-2">2 lines for project description here..Short 2 lines for project
-                                    description
-                                    here..</p>
-                                <div class="mb-4">
-                                    <img src="./assets/images/ArrowRight.svg" alt="arrow" class="img-fluid">
-                                    <a href="./project.html" class="text-main m-plus-1p-bold link">View full project</a>
-                                </div>
+            <div class="filter-item d-flex flex-column align-items-center">
+                <div class="icon-wrap mb-2">
+                    <img src="./assets/images/works/stage design.svg" alt="Slideshow" class="img-fluid">
+                    <img src="./assets/images/works/stage design-active.svg" alt="Slideshow" class="img-fluid active-img">
+                </div>
+                <div class="icon-txt text-uppercase m-plus-1p-medium">
+                    Stage design
+                </div>
+            </div>
+            <div class="filter-item d-flex flex-column align-items-center">
+                <div class="icon-wrap mb-2">
+                    <img src="./assets/images/works/arcticons_ask-ai.svg" alt="Slideshow" class="img-fluid">
+                    <img src="./assets/images/works/arcticons_ask-ai-active.svg" alt="Slideshow" class="img-fluid active-img">
+                </div>
+                <div class="icon-txt text-uppercase m-plus-1p-medium">
+                    Content creation
+                </div>
+            </div>
+            <div class="filter-item d-flex flex-column align-items-center">
+                <div class="icon-wrap mb-2">
+                    <img src="./assets/images/works/Cube.svg" alt="Slideshow" class="img-fluid">
+                    <img src="./assets/images/works/Cube-active.svg" alt="Slideshow" class="img-fluid active-img">
+                </div>
+                <div class="icon-txt text-uppercase m-plus-1p-medium">
+                    3d animation
+                </div>
+            </div>
+            <div class="filter-item d-flex flex-column align-items-center">
+                <div class="icon-wrap mb-2">
+                    <img src="./assets/images/works/Sphere.svg" alt="Slideshow" class="img-fluid">
+                    <img src="./assets/images/works/Sphere-active.svg" alt="Slideshow" class="img-fluid active-img">
+                </div>
+                <div class="icon-txt text-uppercase m-plus-1p-medium">
+                    Hologram
+                </div>
+            </div>
+            <div class="filter-item d-flex flex-column align-items-center">
+                <div class="icon-wrap mb-2">
+                    <img src="./assets/images/works/VFX icon.svg" alt="Slideshow" class="img-fluid">
+                    <img src="./assets/images/works/VFX icon-active.svg" alt="Slideshow" class="img-fluid active-img">
+                </div>
+                <div class="icon-txt text-uppercase m-plus-1p-medium">
+                    VFX
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- project-list -->
+    <section class="project-list">
+        <div class="container-fluid px-5">
+            <div class="grid">
+                <div class="box">
+                    <div class="box-img-wrapper w-100">
+                        <img src="./assets/images/works/project1.png" alt="project" class="img-fluid w-100">
+                    </div>
+                    <div class="px-3">
+                        <h4 class="m-plus-1p-black mt-3">Project Name</h4>
+                        <div class="d-flex flex-column justify-content-between flex-grow-1 m-plus-1p-medium">
+                            <p class="mt-2">2 lines for project description here..Short 2 lines for project
+                                description
+                                here..</p>
+                            <div class="mb-4">
+                                <img src="./assets/images/ArrowRight.svg" alt="arrow" class="img-fluid">
+                                <a href="./project.html" class="text-main m-plus-1p-bold link">View full project</a>
                             </div>
                         </div>
                     </div>
-                    <div class="box">
-                        <div class="box-img-wrapper w-100">
-                            <img src="./assets/images/works/project2.png" alt="project" class="img-fluid w-100">
-                        </div>
-                        <div class="px-3">
-                            <h4 class="m-plus-1p-black mt-3">Project Name</h4>
-                            <div class="d-flex flex-column justify-content-between flex-grow-1 m-plus-1p-medium">
-                                <p class="mt-2">2 lines for project description here..Short 2 lines for project
-                                    description
-                                    here..</p>
-                                <div class="mb-4">
-                                    <img src="./assets/images/ArrowRight.svg" alt="arrow" class="img-fluid">
-                                    <a href="./project.html" class="text-main m-plus-1p-bold link">View full project</a>
-                                </div>
+                </div>
+                <div class="box">
+                    <div class="box-img-wrapper w-100">
+                        <img src="./assets/images/works/project2.png" alt="project" class="img-fluid w-100">
+                    </div>
+                    <div class="px-3">
+                        <h4 class="m-plus-1p-black mt-3">Project Name</h4>
+                        <div class="d-flex flex-column justify-content-between flex-grow-1 m-plus-1p-medium">
+                            <p class="mt-2">2 lines for project description here..Short 2 lines for project
+                                description
+                                here..</p>
+                            <div class="mb-4">
+                                <img src="./assets/images/ArrowRight.svg" alt="arrow" class="img-fluid">
+                                <a href="./project.html" class="text-main m-plus-1p-bold link">View full project</a>
                             </div>
                         </div>
                     </div>
-                    <div class="box">
-                        <div class="box-img-wrapper w-100">
-                            <img src="./assets/images/works/project3.png" alt="project" class="img-fluid w-100">
-                        </div>
-                        <div class="px-3">
-                            <h4 class="m-plus-1p-black mt-3">Project Name</h4>
-                            <div class="d-flex flex-column justify-content-between flex-grow-1 m-plus-1p-medium">
-                                <p class="mt-2">2 lines for project description here..Short 2 lines for project
-                                    description
-                                    here..</p>
-                                <div class="mb-4">
-                                    <img src="./assets/images/ArrowRight.svg" alt="arrow" class="img-fluid">
-                                    <a href="./project.html" class="text-main m-plus-1p-bold link">View full project</a>
-                                </div>
+                </div>
+                <div class="box">
+                    <div class="box-img-wrapper w-100">
+                        <img src="./assets/images/works/project3.png" alt="project" class="img-fluid w-100">
+                    </div>
+                    <div class="px-3">
+                        <h4 class="m-plus-1p-black mt-3">Project Name</h4>
+                        <div class="d-flex flex-column justify-content-between flex-grow-1 m-plus-1p-medium">
+                            <p class="mt-2">2 lines for project description here..Short 2 lines for project
+                                description
+                                here..</p>
+                            <div class="mb-4">
+                                <img src="./assets/images/ArrowRight.svg" alt="arrow" class="img-fluid">
+                                <a href="./project.html" class="text-main m-plus-1p-bold link">View full project</a>
                             </div>
                         </div>
                     </div>
-                    <div class="box">
-                        <div class="box-img-wrapper w-100">
-                            <img src="./assets/images/works/project4.png" alt="project" class="img-fluid w-100">
-                        </div>
-                        <div class="px-3">
-                            <h4 class="m-plus-1p-black mt-3">Project Name</h4>
-                            <div class="d-flex flex-column justify-content-between flex-grow-1 m-plus-1p-medium">
-                                <p class="mt-2">2 lines for project description here..Short 2 lines for project
-                                    description
-                                    here..</p>
-                                <div class="mb-4">
-                                    <img src="./assets/images/ArrowRight.svg" alt="arrow" class="img-fluid">
-                                    <a href="./project.html" class="text-main m-plus-1p-bold link">View full project</a>
-                                </div>
+                </div>
+                <div class="box">
+                    <div class="box-img-wrapper w-100">
+                        <img src="./assets/images/works/project4.png" alt="project" class="img-fluid w-100">
+                    </div>
+                    <div class="px-3">
+                        <h4 class="m-plus-1p-black mt-3">Project Name</h4>
+                        <div class="d-flex flex-column justify-content-between flex-grow-1 m-plus-1p-medium">
+                            <p class="mt-2">2 lines for project description here..Short 2 lines for project
+                                description
+                                here..</p>
+                            <div class="mb-4">
+                                <img src="./assets/images/ArrowRight.svg" alt="arrow" class="img-fluid">
+                                <a href="./project.html" class="text-main m-plus-1p-bold link">View full project</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-    </main>
     <!-- Footer -->
     <footer>
         <div class="container-fluid px-sm-5 px-4 pb-3">
@@ -193,7 +200,7 @@
                     <div class="logo-wrapper">
                         <img src="assets/images/logo.svg" alt="Logo" class="img-fluid" />
                     </div>
-                    <p class="text-gray-md copy-right-txt my-4">© 2024 Metapixel, All Rights Reserved.</p>
+                    <p class= copy-right-txt my-4">© 2024 Metapixel, All Rights Reserved.</p>
                 </div>
                 <div class="col-12 col-md-6">
                     <h4 class="text-gray-md text-uppercase mb-4">Follow us</h4>

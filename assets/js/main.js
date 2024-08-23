@@ -16,17 +16,14 @@ function updateNavbarStyle(section) {
     } else {
         NAV_BAR.classList.remove('navbar-solid');
     }
-
 }
 
 function onScroll(isUpdateBullet) {
-    const headerHeight = HEADER?.offsetHeight || SECTION_WORKS?.offsetHeight || SECTION_PROJECT_DETAILS?.offsetHeight || SECTION_SERVICES_DETAILS?.offsetHeight || SECTION_ABOUT?.offsetHeight;
-    
+    // const headerHeight = HEADER?.offsetHeight || SECTION_WORKS?.offsetHeight || SECTION_PROJECT_DETAILS?.offsetHeight || SECTION_SERVICES_DETAILS?.offsetHeight || SECTION_ABOUT?.offsetHeight;
+    const navbarHeight = MAIN_NAV.offsetHeight;
+    updateNavbarStyle(navbarHeight);
     if (HEADER) {
-        updateNavbarStyle(headerHeight);
         isUpdateBullet && updateActiveBullet();
-    } else {
-        updateNavbarStyle(headerHeight);
     }
 }
 
@@ -36,9 +33,26 @@ document.addEventListener('scroll', function () {
     onScroll(true);
 });
 
-BUTTON_SCROLL_DOWN.addEventListener('click', function(){
-    window.scrollTo({
-        top: FULL_WINDOW_HEIGHT, 
-        behavior: 'smooth'
-    });
-})
+if(BUTTON_SCROLL_DOWN){
+    BUTTON_SCROLL_DOWN.addEventListener('click', function(){
+        window.scrollTo({
+            top: FULL_WINDOW_HEIGHT, 
+            behavior: 'smooth'
+        });
+    })
+}
+
+if(FILTER_ITEMS?.length){
+    FILTER_ITEMS.forEach((item, i)=>{
+        item.addEventListener('click',(event)=>{
+            FILTER_ITEMS.forEach((el,j) => {
+                if(i == j && !el.classList.contains('selected')){
+                    el.classList.add('selected');
+                } else if(i == j && el.classList.contains('selected')){
+                    el.classList.remove('selected');
+                }
+            });
+        })
+    })
+}
+

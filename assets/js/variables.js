@@ -1,5 +1,6 @@
 const NAV_BAR = document.querySelector('.navbar');
 const HEADER = document.querySelector('.header-wrapper');
+const MAIN_NAV = document.querySelector('#main_navbar');
 const SECTION_WORKS = document.querySelector('.work-details');
 const SECTION_PROJECT_DETAILS = document.querySelector('.project-wrap');
 const SECTION_SERVICES_DETAILS = document.querySelector('.services-details');
@@ -9,3 +10,5 @@ const BULLETS = document.querySelectorAll('.bullet');
 const HALF_WINDOW_HEIGHT = window.innerHeight / 2;
 const FULL_WINDOW_HEIGHT = window.innerHeight;
 const BUTTON_SCROLL_DOWN = document.querySelector('#btn_scroll_down');
+const WORK_FILTER = document.querySelector('#work_filter');
+const FILTER_ITEMS = document.querySelectorAll('.filter-item');

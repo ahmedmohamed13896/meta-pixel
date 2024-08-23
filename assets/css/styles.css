@@ -62,7 +62,7 @@ body {
 }
 
 .bg-gradient {
-    background-image: linear-gradient(to right, rgba(107, 81, 138, 0), #352744, rgba(107, 81, 138, 0)) !important;
+    background-image: linear-gradient(to right, rgba(107, 81, 138, .2), #352744, rgba(107, 81, 138, .2)) !important;
     box-shadow: 0px 4px 15px 0px rgba(234, 221, 255, 0.2);
 }
 
@@ -89,7 +89,7 @@ body {
     background-color: #3b3b49;
     border-radius: 50%;
     transition: background-color 0.7s ease, box-shadow 0.7s ease;
-    margin-top: 35px;
+    margin-top: 43px;
 }
 
 .bullet-wrap {
@@ -115,7 +115,7 @@ body {
     background-color: var(--gray-light);
     height: 15px;
     background-image: radial-gradient(50% 50% at 50% 50%, rgba(219, 79, 215, 0.31) 14.69%, rgba(6, 4, 44, 0) 100%);
-    box-shadow: 1px 1px 19px 6px rgba(219, 79, 215, 0.31);
+    box-shadow: 1px 1px 26px 7px rgba(219, 79, 215, 0.61);
 }
 
 .logo-wrapper{
@@ -132,12 +132,12 @@ hr.line{
 
 /* nav style */
 .navbar-custom {
-    background-color: rgb(22 22 22 / 40%);
+    background-color: transparent;
     z-index: 2;
 }
 
 .navbar-solid{
-    background-color: var(--background-dark);
+    background-color: rgba(var(--background-solid), 0.98);
 }
 
 .nav-link.active {
@@ -210,6 +210,22 @@ hr.line{
 
 
 /* services style */
+.services .service-item{
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    display: block;
+    text-decoration: none;
+}
+.services .service-item:hover {
+    transform: translateY(-10px);
+}
+.services .service-item > a{
+    color: var(--gray-light);
+    text-decoration: none;
+}
+.services .service-item:hover .icon-container{
+    animation: pulse 1s ease-in-out 1;
+}
 .services .sec-title::after {
     content: 'services';
 }
@@ -358,6 +374,15 @@ footer .bullet-wrap {
 
 
 
-
-
-
+/* Define the pulsing animation */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}

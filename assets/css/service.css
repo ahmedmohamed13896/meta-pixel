@@ -13,8 +13,17 @@
 }
 
 /* services-list style  */
-.services-list > div:first-child {
+.services-list > div{
+    cursor: default;
+}
+.services-list > div .line{
+    transition: opacity .5s ease-in-out;
+}
+.services-list > div:hover {
     background: radial-gradient(50% 50% at 50% 50%, rgba(101, 47, 144, 0.2) 47%, rgba(29, 14, 42, 0.2) 100%);
+}
+.services-list > div:hover .line{
+    opacity: 1;
 }
 
 .services-list .service-icon-wrap {
