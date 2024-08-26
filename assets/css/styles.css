@@ -44,12 +44,12 @@ body {
 }
 
 
-.btn-shadow:hover{
+.btn-shadow:hover {
     background: var(--background-dark);
     box-shadow: 0px 4px 40px 0px #EADDFF66;
 }
 
-.background-dark{
+.background-dark {
     background: var(--background-dark);
 }
 
@@ -75,7 +75,7 @@ body {
     padding: 0;
 }
 
-.resize-none{
+.resize-none {
     resize: none;
 }
 
@@ -105,7 +105,7 @@ body {
     height: 100%;
     left: 42%;
     background-image: linear-gradient(to top, rgba(197, 163, 224, 0.2), rgba(102, 36, 131, 0.8), rgba(197, 163, 224, 0.2));
-    background-size: 100% 400%; 
+    background-size: 100% 400%;
     background-position: 0 75%;
     bottom: 0;
     z-index: -1;
@@ -118,11 +118,11 @@ body {
     box-shadow: 1px 1px 26px 7px rgba(219, 79, 215, 0.61);
 }
 
-.logo-wrapper{
+.logo-wrapper {
     max-width: 6.25rem;
 }
 
-hr.line{
+hr.line {
     padding: 2px;
     border: 0;
     height: 3px;
@@ -138,12 +138,12 @@ hr.line{
     padding-bottom: .6rem;
 }
 
-.navbar-solid{
+.navbar-solid {
     background-color: rgba(var(--background-solid), 0.98);
 }
 
-.navbar-dark .navbar-nav .nav-link{
-  color: var(--gray-light);
+.navbar-dark .navbar-nav .nav-link {
+    color: var(--gray-light);
 }
 
 .navbar-dark .navbar-nav .nav-link.active {
@@ -163,7 +163,7 @@ hr.line{
     transform: translateX(-50%);
 }
 
-.btn-scroll-down{
+.btn-scroll-down {
     min-width: 120px;
     min-height: 120px;
     border-radius: 50%;
@@ -174,10 +174,12 @@ hr.line{
     justify-content: center;
     transition: box-shadow .3s ease-in-out;
 }
-.btn-scroll-down:hover{
+
+.btn-scroll-down:hover {
     box-shadow: 0px 4px 20px 0px #EADDFF66;
 }
-.btn-scroll-down img{
+
+.btn-scroll-down img {
     width: 50px;
     height: 50px;
 }
@@ -185,7 +187,7 @@ hr.line{
 /* header style  */
 .header-wrapper {
     height: 100vh;
-    background: linear-gradient(180deg, rgb(0 ,0 ,0 , .5) 2.69%, rgb(0 ,0 ,0 , .5) 100%),url('../images/img1.jfif');
+    background: linear-gradient(180deg, rgb(0, 0, 0, .5) 2.69%, rgb(0, 0, 0, .5) 100%), url('../images/img1.jfif');
     background-position: center;
     background-size: cover;
     display: flex;
@@ -216,22 +218,26 @@ hr.line{
 
 
 /* services style */
-.services .service-item{
+.services .service-item {
     cursor: pointer;
     transition: transform 0.3s ease-in-out;
     display: block;
     text-decoration: none;
 }
+
 .services .service-item:hover {
     transform: translateY(-5px);
 }
-.services .service-item > a{
+
+.services .service-item>a {
     color: var(--gray-light);
     text-decoration: none;
 }
-.services .service-item:hover .icon-container{
+
+.services .service-item:hover .icon-container {
     animation: pulse 1s ease-in-out 1;
 }
+
 .services .sec-title::after {
     content: 'services';
 }
@@ -245,7 +251,7 @@ hr.line{
 }
 
 .services .bullet-wrap::after {
-    background-position: 0 75%; 
+    background-position: 0 75%;
 }
 
 /* work style */
@@ -266,21 +272,23 @@ hr.line{
     border-radius: 8px;
     height: 100%;
     overflow: hidden;
+    box-shadow: 0px 4px 15px 0px rgba(234, 221, 255, 0.2)
 }
 
-.works-grid-container .box img{
+.works-grid-container .box img {
     transition: all .4s;
 }
-.works-grid-container .box .box-img-wrapper{
+
+.works-grid-container .box .box-img-wrapper {
     overflow: hidden;
 }
 
-.works-grid-container .box:hover img{
+.works-grid-container .box:hover img {
     transform: scale(1.1);
 }
 
 .works .bullet-wrap::after {
-    background-position: 0 50%; 
+    background-position: 0 50%;
 }
 
 /* contact_us style */
@@ -303,18 +311,18 @@ hr.line{
 }
 
 .contact_us .bullet-wrap::after {
-    background-position: 0 25%; 
+    background-position: 0 25%;
 }
 
 /* footer style  */
-footer .bullet-wrap::after{
-    background-position: 0 100%; 
+footer .bullet-wrap::after {
+    background-position: 0 100%;
     border-bottom-right-radius: 2px;
     border-bottom-left-radius: 2px;
 }
 
 footer .bullet-wrap {
-        width: 15px;
+    width: 15px;
 }
 
 .copy-right-txt {
@@ -338,11 +346,16 @@ footer .bullet-wrap {
 }
 
 .clamp-two-lines {
-    display: -webkit-box;           /* Use a flexible box model */
-    -webkit-box-orient: vertical;   /* Set the box to be vertically oriented */
-    -webkit-line-clamp: 2;          /* Limit the number of lines to 2 */
-    overflow: hidden;               /* Hide the rest of the text */
-    text-overflow: ellipsis;        /* Add ellipsis (...) at the end of the truncated text */
+    display: -webkit-box;
+    /* Use a flexible box model */
+    -webkit-box-orient: vertical;
+    /* Set the box to be vertically oriented */
+    -webkit-line-clamp: 2;
+    /* Limit the number of lines to 2 */
+    overflow: hidden;
+    /* Hide the rest of the text */
+    text-overflow: ellipsis;
+    /* Add ellipsis (...) at the end of the truncated text */
 }
 
 
@@ -354,14 +367,17 @@ footer .bullet-wrap {
     .grid-media-list li {
         text-align: start;
     }
+
     .sec-title::after {
         font-size: 13rem;
     }
-    .btn-scroll-down{
+
+    .btn-scroll-down {
         min-width: 80px;
         min-height: 80px;
     }
-    .btn-scroll-down img{
+
+    .btn-scroll-down img {
         width: 25px;
         height: 25px;
     }
@@ -376,7 +392,7 @@ footer .bullet-wrap {
         font-size: 10rem;
     }
 
-    .navbar-dark .navbar-nav .nav-link{
+    .navbar-dark .navbar-nav .nav-link {
         text-align: center;
         margin: .25rem auto;
     }
@@ -395,18 +411,16 @@ footer .bullet-wrap {
     }
 }
 
-
-
-
-
 /* Define the pulsing animation */
 @keyframes pulse {
     0% {
         transform: scale(1);
     }
+
     50% {
         transform: scale(1.1);
     }
+
     100% {
         transform: scale(1);
     }
