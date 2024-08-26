@@ -134,18 +134,24 @@ hr.line{
 .navbar-custom {
     background-color: transparent;
     z-index: 2;
+    padding-top: .6rem;
+    padding-bottom: .6rem;
 }
 
 .navbar-solid{
     background-color: rgba(var(--background-solid), 0.98);
 }
 
-.nav-link.active {
+.navbar-dark .navbar-nav .nav-link{
+  color: var(--gray-light);
+}
+
+.navbar-dark .navbar-nav .nav-link.active {
     color: var(--main-color) !important;
     position: relative;
 }
 
-.nav-link.active::after {
+.navbar-dark .navbar-nav .nav-link.active::after {
     content: "";
     position: absolute;
     width: 100%;
@@ -217,7 +223,7 @@ hr.line{
     text-decoration: none;
 }
 .services .service-item:hover {
-    transform: translateY(-10px);
+    transform: translateY(-5px);
 }
 .services .service-item > a{
     color: var(--gray-light);
@@ -260,6 +266,17 @@ hr.line{
     border-radius: 8px;
     height: 100%;
     overflow: hidden;
+}
+
+.works-grid-container .box img{
+    transition: all .4s;
+}
+.works-grid-container .box .box-img-wrapper{
+    overflow: hidden;
+}
+
+.works-grid-container .box:hover img{
+    transform: scale(1.1);
 }
 
 .works .bullet-wrap::after {
@@ -320,6 +337,14 @@ footer .bullet-wrap {
     height: 3rem;
 }
 
+.clamp-two-lines {
+    display: -webkit-box;           /* Use a flexible box model */
+    -webkit-box-orient: vertical;   /* Set the box to be vertically oriented */
+    -webkit-line-clamp: 2;          /* Limit the number of lines to 2 */
+    overflow: hidden;               /* Hide the rest of the text */
+    text-overflow: ellipsis;        /* Add ellipsis (...) at the end of the truncated text */
+}
+
 
 @media (max-width: 1100px) {
     .grid-media-list {
@@ -351,12 +376,12 @@ footer .bullet-wrap {
         font-size: 10rem;
     }
 
-    .nav-link{
+    .navbar-dark .navbar-nav .nav-link{
         text-align: center;
-        margin-left: auto;
-        margin-right: auto;
+        margin: .25rem auto;
     }
-    .nav-link.active::after {
+
+    .navbar-dark .navbar-nav .nav-link.active::after {
         bottom: 0;
         left: 0;
         right: 0;

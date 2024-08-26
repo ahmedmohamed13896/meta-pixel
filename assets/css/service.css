@@ -29,3 +29,13 @@
 .services-list .service-icon-wrap {
     width: 11rem;
 }
+.services-list .service-img-wrap{
+    overflow: hidden;
+}
+.services-list .service-img-wrap img{
+    transition: all .4s;
+}
+
+.services-list >div:hover .service-img-wrap img{
+    transform: scale(1.1);
+}

@@ -28,7 +28,7 @@
 
 <body class="background-dark d-flex flex-column min-vh-100 works-page">
     <!-- Navbar -->
-    <nav id="main_navbar" class="navbar navbar-expand-md navbar-dark navbar-fixed px-5 navbar-custom w-100 position-fixed top-0">
+    <nav id="main_navbar" class="navbar navbar-expand-md navbar-dark navbar-fixed px-sm-5 px-4 navbar-custom w-100 position-fixed top-0">
         <div class="container-fluid">
             <a class="navbar-brand logo-wrapper" href="index.html">
                 <img src="assets/images/logo.svg" alt="Logo" class="img-fluid" />
@@ -60,7 +60,7 @@
     <!-- Filter -->
     <section id="work_filter" class="text-center position-sticky work-details__icon-grid">
         <div class="max-w-56 grid-view">
-            <div class="filter-item selected d-flex flex-column align-items-center">
+            <div class="filter-item d-flex flex-column align-items-center" data-filter="prjection-mapping">
                 <div class="icon-wrap mb-2">
                     <img src="./assets/images/works/Slideshow.svg" alt="Slideshow" class="img-fluid">
                     <img src="./assets/images/works/Slideshow-active.svg" alt="Slideshow" class="img-fluid active-img">
@@ -69,7 +69,7 @@
                     Projection mapping
                 </div>
             </div>
-            <div class="filter-item d-flex flex-column align-items-center">
+            <div class="filter-item d-flex flex-column align-items-center" data-filter="stage-design">
                 <div class="icon-wrap mb-2">
                     <img src="./assets/images/works/stage design.svg" alt="Slideshow" class="img-fluid">
                     <img src="./assets/images/works/stage design-active.svg" alt="Slideshow" class="img-fluid active-img">
@@ -78,7 +78,7 @@
                     Stage design
                 </div>
             </div>
-            <div class="filter-item d-flex flex-column align-items-center">
+            <div class="filter-item d-flex flex-column align-items-center" data-filter="content-creation">
                 <div class="icon-wrap mb-2">
                     <img src="./assets/images/works/arcticons_ask-ai.svg" alt="Slideshow" class="img-fluid">
                     <img src="./assets/images/works/arcticons_ask-ai-active.svg" alt="Slideshow" class="img-fluid active-img">
@@ -87,7 +87,7 @@
                     Content creation
                 </div>
             </div>
-            <div class="filter-item d-flex flex-column align-items-center">
+            <div class="filter-item d-flex flex-column align-items-center" data-filter="3d-animation">
                 <div class="icon-wrap mb-2">
                     <img src="./assets/images/works/Cube.svg" alt="Slideshow" class="img-fluid">
                     <img src="./assets/images/works/Cube-active.svg" alt="Slideshow" class="img-fluid active-img">
@@ -96,7 +96,7 @@
                     3d animation
                 </div>
             </div>
-            <div class="filter-item d-flex flex-column align-items-center">
+            <div class="filter-item d-flex flex-column align-items-center" data-filter="hologram">
                 <div class="icon-wrap mb-2">
                     <img src="./assets/images/works/Sphere.svg" alt="Slideshow" class="img-fluid">
                     <img src="./assets/images/works/Sphere-active.svg" alt="Slideshow" class="img-fluid active-img">
@@ -105,7 +105,7 @@
                     Hologram
                 </div>
             </div>
-            <div class="filter-item d-flex flex-column align-items-center">
+            <div class="filter-item d-flex flex-column align-items-center" data-filter="vfx">
                 <div class="icon-wrap mb-2">
                     <img src="./assets/images/works/VFX icon.svg" alt="Slideshow" class="img-fluid">
                     <img src="./assets/images/works/VFX icon-active.svg" alt="Slideshow" class="img-fluid active-img">
@@ -120,14 +120,14 @@
     <section class="project-list">
         <div class="container-fluid px-5">
             <div class="grid">
-                <div class="box">
+                <div class="box prjection-mapping">
                     <div class="box-img-wrapper w-100">
-                        <img src="./assets/images/works/project1.png" alt="project" class="img-fluid w-100">
+                        <img src="./assets/images/works/projection-mapping.jpeg" alt="project" class="img-fluid w-100">
                     </div>
                     <div class="px-3">
-                        <h4 class="m-plus-1p-black mt-3">Project Name</h4>
+                        <h4 class="m-plus-1p-black mt-3">Projection Mapping</h4>
                         <div class="d-flex flex-column justify-content-between flex-grow-1 m-plus-1p-medium">
-                            <p class="mt-2">2 lines for project description here..Short 2 lines for project
+                            <p class="mt-2 clamp-two-lines">2 lines for project description here..Short 2 lines for project
                                 description
                                 here..</p>
                             <div class="mb-4">
@@ -137,14 +137,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="box">
+                <div class="box stage-design">
                     <div class="box-img-wrapper w-100">
-                        <img src="./assets/images/works/project2.png" alt="project" class="img-fluid w-100">
+                        <img src="./assets/images/works/stage-design.jpeg" alt="project" class="img-fluid w-100">
                     </div>
                     <div class="px-3">
-                        <h4 class="m-plus-1p-black mt-3">Project Name</h4>
+                        <h4 class="m-plus-1p-black mt-3">Stage Design</h4>
                         <div class="d-flex flex-column justify-content-between flex-grow-1 m-plus-1p-medium">
-                            <p class="mt-2">2 lines for project description here..Short 2 lines for project
+                            <p class="mt-2 clamp-two-lines">2 lines for project description here..Short 2 lines for project
                                 description
                                 here..</p>
                             <div class="mb-4">
@@ -154,14 +154,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="box">
+                <div class="box content-creation">
                     <div class="box-img-wrapper w-100">
-                        <img src="./assets/images/works/project3.png" alt="project" class="img-fluid w-100">
+                        <img src="./assets/images/works/content-creation.jpeg" alt="project" class="img-fluid w-100">
                     </div>
                     <div class="px-3">
-                        <h4 class="m-plus-1p-black mt-3">Project Name</h4>
+                        <h4 class="m-plus-1p-black mt-3">Content Creation</h4>
                         <div class="d-flex flex-column justify-content-between flex-grow-1 m-plus-1p-medium">
-                            <p class="mt-2">2 lines for project description here..Short 2 lines for project
+                            <p class="mt-2 clamp-two-lines">2 lines for project description here..Short 2 lines for project
                                 description
                                 here..</p>
                             <div class="mb-4">
@@ -171,14 +171,48 @@
                         </div>
                     </div>
                 </div>
-                <div class="box">
+                <div class="box 3d-animation">
                     <div class="box-img-wrapper w-100">
-                        <img src="./assets/images/works/project4.png" alt="project" class="img-fluid w-100">
+                        <img src="./assets/images/works/3d-animation.jpeg" alt="project" class="img-fluid w-100">
                     </div>
                     <div class="px-3">
-                        <h4 class="m-plus-1p-black mt-3">Project Name</h4>
+                        <h4 class="m-plus-1p-black mt-3">3D Animation</h4>
                         <div class="d-flex flex-column justify-content-between flex-grow-1 m-plus-1p-medium">
-                            <p class="mt-2">2 lines for project description here..Short 2 lines for project
+                            <p class="mt-2 clamp-two-lines">2 lines for project description here..Short 2 lines for project
+                                description
+                                here..</p>
+                            <div class="mb-4">
+                                <img src="./assets/images/ArrowRight.svg" alt="arrow" class="img-fluid">
+                                <a href="./project.html" class="text-main m-plus-1p-bold link">View full project</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box hologram">
+                    <div class="box-img-wrapper w-100">
+                        <img src="./assets/images/works/hologram.jpeg" alt="project" class="img-fluid w-100">
+                    </div>
+                    <div class="px-3">
+                        <h4 class="m-plus-1p-black mt-3">Hologram</h4>
+                        <div class="d-flex flex-column justify-content-between flex-grow-1 m-plus-1p-medium">
+                            <p class="mt-2 clamp-two-lines">2 lines for project description here..Short 2 lines for project
+                                description
+                                here..</p>
+                            <div class="mb-4">
+                                <img src="./assets/images/ArrowRight.svg" alt="arrow" class="img-fluid">
+                                <a href="./project.html" class="text-main m-plus-1p-bold link">View full project</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box vfx">
+                    <div class="box-img-wrapper w-100">
+                        <img src="./assets/images/works/vfx.jpeg" alt="project" class="img-fluid w-100">
+                    </div>
+                    <div class="px-3">
+                        <h4 class="m-plus-1p-black mt-3">VFX</h4>
+                        <div class="d-flex flex-column justify-content-between flex-grow-1 m-plus-1p-medium">
+                            <p class="mt-2 clamp-two-lines">2 lines for project description here..Short 2 lines for project
                                 description
                                 here..</p>
                             <div class="mb-4">

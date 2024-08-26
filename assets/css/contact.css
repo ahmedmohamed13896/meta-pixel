@@ -4,34 +4,356 @@
     background-blend-mode: multiply;
 }
 
-.header__title{
+.header_wrapper {
+    max-width: 1216px;
+    margin-inline-end: auto;
+}
+
+.header__title {
     font-size: 3.5rem;
     line-height: 1.2;
 }
-.header__subTitle{
+
+.header__subTitle {
     font-size: 1.3rem;
     line-height: 1.2;
 }
-.map-section{
+
+/* Map style */
+.w-slider {
+    text-align: center;
+    clear: both;
+    -webkit-tap-highlight-color: transparent;
+    tap-highlight-color: transparent;
+    background: #ddd;
+    height: 300px;
+    position: relative
+}
+
+.w-slider-mask {
+    z-index: 1;
+    white-space: nowrap;
+    height: 100%;
+    display: block;
+    position: relative;
+    left: 0;
+    right: 0;
+    overflow: hidden
+}
+
+.w-slide {
+    vertical-align: top;
+    white-space: normal;
+    text-align: left;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    position: relative
+}
+
+.w-slider-nav {
+    z-index: 2;
+    text-align: center;
+    -webkit-tap-highlight-color: transparent;
+    tap-highlight-color: transparent;
+    height: 40px;
+    margin: auto;
+    padding-top: 10px;
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    right: 0
+}
+
+.w-slider-nav.w-round>div {
+    border-radius: 100%
+}
+
+.w-slider-nav.w-num>div {
+    font-size: inherit;
+    line-height: inherit;
+    width: auto;
+    height: auto;
+    padding: .2em .5em
+}
+
+.w-slider-nav.w-shadow>div {
+    box-shadow: 0 0 3px rgba(51, 51, 51, .4)
+}
+
+.w-slider-nav-invert {
+    color: #fff
+}
+
+.w-slider-nav-invert>div {
+    background-color: rgba(34, 34, 34, .4)
+}
+
+.w-slider-nav-invert>div.w-active {
+    background-color: #222
+}
+
+.w-slider-aria-label {
+    clip: rect(0 0 0 0);
+    border: 0;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    position: absolute;
+    overflow: hidden
+}
+
+.hide {
+    display: none
+}
+
+.maps-wrapper {
+    justify-content: center;
+    align-items: flex-end;
+    width: 112.8rem;
+    height: 54.9rem;
+    display: flex;
+    position: relative
+}
+
+.maps-image {
+    width: 100%;
+    height: 100%
+}
+
+.north-america-map,
+.south-america-map,
+.europe-map,
+.asia-map,
+.australia-map {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity .7s;
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%
+}
+
+.hover-north-america {
+    z-index: 1;
+    width: 45%;
+    height: 59%;
+    position: absolute;
+    top: 0%;
+    bottom: auto;
+    left: 0%;
+    right: auto
+}
+
+.hover-south-america {
+    z-index: 1;
+    width: 14.2%;
+    height: 41%;
+    position: absolute;
+    top: auto;
+    bottom: 0%;
+    left: 24%;
+    right: auto
+}
+
+.hover-europe {
+    z-index: 1;
+    width: 16.4%;
+    height: 46.2%;
+    position: absolute;
+    top: 0%;
+    bottom: auto;
+    left: 43.7%;
+    right: auto
+}
+
+.hover-asia {
+    z-index: 1;
+    width: 40%;
+    height: 63.4%;
+    position: absolute;
+    top: 0%;
+    bottom: auto;
+    left: auto;
+    right: 0%
+}
+
+.hover-australia {
+    z-index: 1;
+    width: 21.9%;
+    height: 35.7%;
+    position: absolute;
+    top: auto;
+    bottom: 0%;
+    left: auto;
+    right: 0%
+}
+
+.maps-images-wrapper {
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 15px 20px 10px rgba(0, 0, 0, .5)
+}
+
+.maps-slider {
+    background-color: transparent
+}
+
+.maps-sliders-image {
+    object-fit: cover;
+    width: 100%;
+    height: 100%
+}
+
+.maps-slider-wrapper {
+    display: none
+}
+
+.maps-slider-item {
+    width: 100%;
+    height: 100%
+}
+
+.north-america-slider {
+    z-index: 2;
+    opacity: 0;
+    width: 32.5rem;
+    height: 37.8rem;
+    transition: opacity .7s;
+    position: absolute;
+    box-shadow: 0 15px 20px 10px rgba(0, 0, 0, .5)
+}
+
+.south-america-slider {
+    z-index: 2;
+    opacity: 0;
+    flex: none;
+    width: 32.5rem;
+    height: 37.8rem;
+    transition: opacity .7s;
+    position: absolute;
+    box-shadow: 0 15px 20px 10px rgba(0, 0, 0, .5)
+}
+
+.south-america-slider-copy {
+    z-index: 2;
+    width: 32.5rem;
+    height: 37.8rem;
+    position: absolute;
+    box-shadow: 0 15px 20px 10px rgba(0, 0, 0, .5)
+}
+
+.europe-slider,
+.asia-slider,
+.australia-slider {
+    z-index: 2;
+    opacity: 0;
+    flex: none;
+    width: 32.5rem;
+    height: 37.8rem;
+    transition: opacity .7s;
+    position: absolute;
+    box-shadow: 0 15px 20px 10px rgba(0, 0, 0, .5)
+}
+
+.maps-h2-divider {
+    background-color: #fff;
+    width: 100%;
+    height: 1px;
+    margin-top: 2.1rem;
+    margin-bottom: 11.4rem
+}
+
+.north-america-flex {
+    opacity: 0;
+    color: #fff;
+    align-items: flex-end;
+    transition: opacity .7s;
+    display: flex;
+    position: absolute;
+    top: -9rem;
+    bottom: auto;
+    left: 0%;
+    right: auto
+}
+
+.location-icon {
+    width: 1.8rem;
+    height: auto;
+    margin-right: 1.5rem
+}
+
+.south-america-flex,
+.asia-flex,
+.europe-flex,
+.australia-flex {
+    opacity: 0;
+    color: #fff;
+    align-items: flex-end;
+    transition: opacity .7s;
+    display: flex;
+    position: absolute;
+    top: -9rem;
+    bottom: auto;
+    left: 0%;
+    right: auto
+}
+
+.map-section {
     height: 650px;
     width: 100%;
     background-image: url(../images/contact/map.png);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 70%;
-    margin-top: -22.5%;
-    margin-bottom: -22.5%;
+    background-size: contain;
+}
 
+.maps-location-content-wrapper {
+    display: none;
+}
+
+.maps-wrapper {
+    width: 100%;
+    max-width: 1216px;
+    height: auto;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.w-slider {
+    height: 100%;
+}
+
+.north-america-slider,
+.south-america-slider,
+.asia-slider,
+.australia-slider,
+.europe-slider {
+    width: 200px;
+    height: 200px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 4px 15px 0px #EADDFF66;
+}
+
+.contact .sec-title::after {
+    content: 'in touch';
 }
 
 @media screen and (max-width: 992px) {
-    .header__title{
+    .header__title {
         font-size: 2.5rem;
     }
-    .map-section{
+
+    .map-section {
         height: 400px;
-        margin-top: -25%;
-        margin-bottom: -25%;
-        background-size: 100%;
+        background-size: contain;
     }
 }

@@ -1,6 +1,7 @@
 const NAV_BAR = document.querySelector('.navbar');
 const HEADER = document.querySelector('.header-wrapper');
 const MAIN_NAV = document.querySelector('#main_navbar');
+const NAV_TOGGLER = document.querySelector('.navbar-toggler');
 const SECTION_WORKS = document.querySelector('.work-details');
 const SECTION_PROJECT_DETAILS = document.querySelector('.project-wrap');
 const SECTION_SERVICES_DETAILS = document.querySelector('.services-details');
@@ -12,3 +13,7 @@ const FULL_WINDOW_HEIGHT = window.innerHeight;
 const BUTTON_SCROLL_DOWN = document.querySelector('#btn_scroll_down');
 const WORK_FILTER = document.querySelector('#work_filter');
 const FILTER_ITEMS = document.querySelectorAll('.filter-item');
+const BOXS_CONTENT = document.querySelectorAll('.project-list .grid .box');
+const NAV_COLLAPSE = document.querySelector('.navbar-collapse');
+const NAV_HEIGHT = 100;
+let SELECTED_FILTERS = ['prjection-mapping',];
