@@ -120,6 +120,12 @@ body {
 
 .logo-wrapper {
     max-width: 6.25rem;
+    display: block;
+    z-index: 1;
+}
+
+.logo-wrapper img{
+    display: block;
 }
 
 hr.line {

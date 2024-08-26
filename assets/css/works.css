@@ -116,4 +116,7 @@
     .project-list .box .box-img-wrapper img{
         height: 250px;
     }
+    .work-details__icon-grid{
+        top: 88px;
+    }
 }
