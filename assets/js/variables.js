@@ -17,3 +17,4 @@ const BOXS_CONTENT = document.querySelectorAll('.project-list .grid .box');
 const NAV_COLLAPSE = document.querySelector('.navbar-collapse');
 const NAV_HEIGHT = 100;
 let SELECTED_FILTERS = ['prjection-mapping',];
+const LOADER = document.querySelector('.loader_section');

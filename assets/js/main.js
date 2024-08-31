@@ -1,3 +1,19 @@
+window.onload = function() {
+    LOADER.style.display =  'none';
+};
+
+
+
+
+
+
+
+
+
+
+
+/////////////////
+
 function updateActiveBullet() {
     SECTIONS.forEach((section, index) => {
         const rect = section.getBoundingClientRect();
@@ -89,3 +105,5 @@ if(FILTER_ITEMS?.length){
 
 // Initialize by showing all content
 BOXS_CONTENT.forEach(content => content.classList.add('show'));
+
+
