@@ -16,7 +16,7 @@ body {
 
 .sec-title {
     color: var(--secondary-color);
-    font-family: 'BOYA alternative';
+    font-family: 'BOYA alternative',sans-serif;
     font-size: 5rem;
     position: relative;
     height: 100px;
@@ -242,6 +242,7 @@ hr.line {
 
 .services .service-item:hover .icon-container {
     animation: pulse 1s ease-in-out 1;
+    filter: contrast(0) brightness(2);
 }
 
 .services .sec-title::after {
@@ -260,18 +261,18 @@ hr.line {
     background-position: 0 75%;
 }
 
-/* work style */
-.works .sec-title::after {
-    content: 'works';
+/* project style */
+.projects .sec-title::after {
+    content: 'projects';
 }
 
-.works .works-grid-container {
+.projects .projects-grid-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
 }
 
-.works-grid-container .box {
+.projects-grid-container .box {
     display: flex;
     flex-direction: column;
     border: 1px solid var(--gray-light);
@@ -281,19 +282,19 @@ hr.line {
     box-shadow: 0px 4px 15px 0px rgba(234, 221, 255, 0.2)
 }
 
-.works-grid-container .box img {
+.projects-grid-container .box img {
     transition: all .4s;
 }
 
-.works-grid-container .box .box-img-wrapper {
+.projects-grid-container .box .box-img-wrapper {
     overflow: hidden;
 }
 
-.works-grid-container .box:hover img {
+.projects-grid-container .box:hover img {
     transform: scale(1.1);
 }
 
-.works .bullet-wrap::after {
+.projects .bullet-wrap::after {
     background-position: 0 50%;
 }
 
@@ -335,10 +336,14 @@ footer .bullet-wrap {
     font-size: 0.85rem;
 }
 
+
+
 .grid-media-list {
     display: grid;
     grid-template-columns: repeat(9, 1fr);
     align-items: center;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
 }
 
 .grid-media-list li {
@@ -346,9 +351,27 @@ footer .bullet-wrap {
     margin-bottom: 0.5rem;
 }
 
+.grid-media-list li .social-link{
+    text-decoration: none;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    display: block;
+    width: fit-content;
+}
+
+.grid-media-list li .social-link:hover{
+    filter: contrast(10);
+    transform: scale(1.1);
+    box-shadow: 0px 25px 20px -17px rgba(219, 79, 215, 0.61);
+}
+
 .grid-media-list li img {
     width: 3rem;
     height: 3rem;
+}
+
+.follow-us:hover .grid-media-list{
+    opacity: 1;
 }
 
 .clamp-two-lines {
@@ -389,8 +412,13 @@ footer .bullet-wrap {
     }
 }
 
+@media (max-width: 1024px) {
+    .grid-media-list{
+        opacity: 1;
+    }
+}
 @media (max-width: 768px) {
-    .works .works-grid-container {
+    .projects .projects-grid-container {
         grid-template-columns: repeat(1, 1fr);
     }
 
@@ -417,7 +445,36 @@ footer .bullet-wrap {
     }
 }
 
+/* Fade In Background */
+.fadeInBackground {
+    animation: fadeInBg 1s ease-in-out forwards;
+}
+
+
+/* Fade Out Background */
+.fadeOutBackground {
+    animation: fadeOutBg 1s ease-out forwards;
+}
+
+@keyframes fadeInBg {
+    from {
+        background-color: transparent; /* or a specific initial color */
+    }
+    to {
+        background-color:  rgba(var(--background-solid), 0.98); /* or your desired final color */
+    }
+}
+
 /* Define the pulsing animation */
+@keyframes fadeOutBg {
+    from {
+        background-color: rgba(var(--background-solid), 0.98); /* or your starting color */
+    }
+    to {
+        background-color: transparent; /* or your ending color */
+    }
+}
+
 @keyframes pulse {
     0% {
         transform: scale(1);

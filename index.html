@@ -9,6 +9,9 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
     <link rel="manifest" href="./site.webmanifest">
+    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
@@ -44,7 +47,7 @@
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav ms-auto">
                         <a class="nav-link px-md-3 px-lg-4 active" aria-current="page" href="./index.html">Home</a>
-                        <a class="nav-link px-md-3 px-lg-4" href="./works.html">Works</a>
+                        <a class="nav-link px-md-3 px-lg-4" href="./projects.html">Projects</a>
                         <a class="nav-link px-md-3 px-lg-4" href="./services.html">Services</a>
                         <a class="nav-link px-md-3 px-lg-4" href="./about.html">About</a>
                         <a class="nav-link px-md-3 px-lg-4" href="./contact.html">Contact Us</a>
@@ -54,10 +57,10 @@
         </nav>
         <div
             class="d-flex flex-column align-items-center justify-content-center flex-grow-1 text-center position-relative px-sm-4 px-4">
-            <h1 class="boya-alternative text-uppercase header__title">Meta Pixel</h1>
+            <!-- <h1 class="boya-alternative text-uppercase header__title">Meta Pixel</h1>
             <p class="m-plus-1p-medium text-uppercase mb-0 header__subTitle">Unleashing Extraordinary Experiences.</p>
             <p class="m-plus-1p-medium text-uppercase header__subTitle">Where Every Event Becomes an <span
-                    class="text-main">Unforgettable Spectacle!</span></p>
+                    class="text-main">Unforgettable Spectacle!</span></p> -->
         </div>
     </header>
     <!-- About -->
@@ -209,20 +212,20 @@
 
     </section>
     <!-- Works -->
-    <section id="works" class="works bullet-section container-fluid px-sm-5 px-4">
+    <section id="projects" class="projects bullet-section container-fluid px-sm-5 px-4">
         <div class="d-flex">
             <div class="bullet-wrap pt-5">
                 <div class="bullet" data-section="about"></div>
             </div>
             <div class="row ps-4 pt-5">
                 <div class="d-flex justify-content-between align-items-start flex-column flex-lg-row">
-                    <h2 class="sec-title text-uppercase">Our works</h2>
-                    <a href="./works.html"
+                    <h2 class="sec-title text-uppercase">Our Projects</h2>
+                    <a href="./projects.html"
                         class="btn btn-shadow text-uppercase work-sans-bold text-main py-2 px-4 my-4">
                         <img src="./assets/images/ArrowRight.svg" alt="arrow" class="img-fluid">
                         View all projects</a>
                 </div>
-                <div class="works-grid-container mt-4">
+                <div class="projects-grid-container mt-4">
                     <div class="box">
                         <div class="box-img-wrapper w-100">
                             <img src="./assets/images/frame1.png" alt="project" class="img-fluid w-100">
@@ -235,7 +238,7 @@
                                     here..</p>
                                 <div class="mb-4">
                                     <img src="./assets/images/ArrowRight.svg" alt="arrow" class="img-fluid">
-                                    <a href="#" class="text-main m-plus-1p-bold link">View full project</a>
+                                    <a href="./project.html" class="text-main m-plus-1p-bold link">View full project</a>
                                 </div>
                             </div>
                         </div>
@@ -252,7 +255,7 @@
                                     here..</p>
                                 <div class="mb-4">
                                     <img src="./assets/images/ArrowRight.svg" alt="arrow" class="img-fluid">
-                                    <a href="#" class="text-main m-plus-1p-bold link">View full project</a>
+                                    <a href="./project.html" class="text-main m-plus-1p-bold link">View full project</a>
                                 </div>
                             </div>
                         </div>
@@ -269,7 +272,7 @@
                                     here..</p>
                                 <div class="mb-4">
                                     <img src="./assets/images/ArrowRight.svg" alt="arrow" class="img-fluid">
-                                    <a href="#" class="text-main m-plus-1p-bold link">View full project</a>
+                                    <a href="./project.html" class="text-main m-plus-1p-bold link">View full project</a>
                                 </div>
                             </div>
                         </div>
@@ -286,7 +289,7 @@
                                     here..</p>
                                 <div class="mb-4">
                                     <img src="./assets/images/ArrowRight.svg" alt="arrow" class="img-fluid">
-                                    <a href="#" class="text-main m-plus-1p-bold link">View full project</a>
+                                    <a href="./project.html" class="text-main m-plus-1p-bold link">View full project</a>
                                 </div>
                             </div>
                         </div>
@@ -373,37 +376,55 @@
                         <div class="logo-wrapper">
                             <img src="assets/images/Logo.png" alt="Logo" class="img-fluid" />
                         </div>
-                        <p class="text-gray-md copy-right-txt my-4">© 2024 Metapixel, All Rights Reserved.</p>
+                        <p class="text-gray-md copy-right-txt my-4">© 2024 Metapixel, All Rights Reserved.</p>
                     </div>
-                    <div class="col-12 col-md-6">
-                        <h4 class="text-gray-md text-uppercase mb-4">Follow us</h4>
+                    <div class="col-12 col-md-6 follow-us">
+                        <h4 class="text-gray-md text-uppercase mb-4 d-flex gap-2 align-items-center">Follow us <img src="./assets/images/ArrowRightGray.svg" alt="arrowWright"></h4>
                         <ul class="list-none grid-media-list">
                             <li class="pe-2 text-start">
-                                <img src="./assets/images/FacebookLogo.svg" alt="facebook" class="img-fluid">
+                                <a class="social-link" href="">
+                                    <img src="./assets/images/FacebookLogo.svg" alt="facebook" class="img-fluid">
+                                </a>
                             </li>
                             <li>
-                                <img src="./assets/images/LinkedinLogo.svg" alt="facebook" class="img-fluid">
+                                <a class="social-link" href="">
+                                    <img src="./assets/images/LinkedinLogo.svg" alt="facebook" class="img-fluid">
+                                </a>
                             </li>
                             <li>
-                                <img src="./assets/images/PinterestLogo.svg" alt="facebook" class="img-fluid">
+                                <a class="social-link" href="">
+                                    <img src="./assets/images/PinterestLogo.svg" alt="facebook" class="img-fluid">
+                                </a>
                             </li>
                             <li>
-                                <img src="./assets/images/XLogo.svg" alt="facebook" class="img-fluid">
+                                <a class="social-link" href="">
+                                    <img src="./assets/images/XLogo.svg" alt="facebook" class="img-fluid">
+                                </a>
                             </li>
                             <li>
-                                <img src="./assets/images/YoutubeLogo.svg" alt="facebook" class="img-fluid">
+                                <a class="social-link" href="">
+                                    <img src="./assets/images/YoutubeLogo.svg" alt="facebook" class="img-fluid">
+                                </a>
                             </li>
                             <li>
-                                <img src="./assets/images/TiktokLogo.svg" alt="facebook" class="img-fluid">
+                                <a class="social-link" href="">
+                                    <img src="./assets/images/TiktokLogo.svg" alt="facebook" class="img-fluid">
+                                </a>
                             </li>
                             <li>
-                                <img src="./assets/images/TumblrLogo.svg" alt="facebook" class="img-fluid">
+                                <a class="social-link" href="">
+                                    <img src="./assets/images/TumblrLogo.svg" alt="facebook" class="img-fluid">
+                                </a>
                             </li>
                             <li>
-                                <img src="./assets/images/MetaLogo.svg" alt="facebook" class="img-fluid">
+                                <a class="social-link" href="">
+                                    <img src="./assets/images/MetaLogo.svg" alt="facebook" class="img-fluid">
+                                </a>
                             </li>
                             <li>
-                                <img src="./assets/images/InstagramLogo.svg" alt="facebook" class="img-fluid">
+                                <a class="social-link" href="">
+                                    <img src="./assets/images/InstagramLogo.svg" alt="facebook" class="img-fluid">
+                                </a>
                             </li>
                         </ul>
                     </div>

@@ -13,9 +13,9 @@ function updateActiveBullet() {
 function updateNavbarStyle(navHeight) {
     const isExpanded = NAV_COLLAPSE.classList.contains('show');    
     if ((window.scrollY >= navHeight) || isExpanded) {
-        NAV_BAR.classList.add('navbar-solid');
+        NAV_BAR.classList.add('fadeInBackground');
     } else {
-        NAV_BAR.classList.remove('navbar-solid');
+        NAV_BAR.classList.remove('fadeInBackground');
     }
 }
 
@@ -35,9 +35,9 @@ document.addEventListener('scroll', function () {
 
 NAV_TOGGLER.addEventListener('click',function(e){
     if(e.target.classList.contains('show')){
-        NAV_BAR.classList.add('navbar-solid');
+        NAV_BAR.classList.add('fadeInBackground');
     }else if (window.scrollY < NAV_HEIGHT){
-        NAV_BAR.classList.add('navbar-solid');
+        NAV_BAR.classList.add('fadeInBackground');
     }
 });
 
