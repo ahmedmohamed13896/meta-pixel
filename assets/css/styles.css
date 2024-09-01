@@ -1,5 +1,8 @@
 @import './variables.css';
 @import './fonts.css';
+html{
+    overflow-x: hidden;
+}
 
 body {
     color: var(--gray-light);
@@ -7,6 +10,8 @@ body {
     font-weight: var(--main-font-weight);
     font-family: var(--font-family-mplus);
     position: relative;
+    scroll-behavior: smooth;
+    overflow: hidden;
 }
 
 /* global styles  */
@@ -34,6 +39,11 @@ body {
     left: 0;
     top: 50%;
     transform: translateY(-50%);
+}
+
+.card-title{
+    font-size: 36px;
+    letter-spacing: 3.5px;
 }
 
 .btn-shadow {
@@ -81,6 +91,10 @@ body {
 
 .max-w-56 {
     max-width: 56rem;
+}
+
+.pt-65{
+    padding-top: 65px;
 }
 
 .bullet {
