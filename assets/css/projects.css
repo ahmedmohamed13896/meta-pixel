@@ -1,4 +1,7 @@
 /* projects page style  */
+.projects-page{
+    overflow: unset;
+}
 /* project-details */
 .project-details {
     padding: calc(100px + 8rem) 3rem 0;

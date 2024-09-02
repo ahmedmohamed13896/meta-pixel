@@ -3,15 +3,6 @@ window.onload = function() {
 };
 
 
-
-
-
-
-
-
-
-
-
 /////////////////
 
 function updateActiveBullet() {
@@ -91,7 +82,7 @@ if(FILTER_ITEMS?.length){
                 if (SELECTED_FILTERS.some(f => contentClasses.contains(f))) {
                     content.classList.add('show');
                 } else {
-                    content.classList.remove('show');
+                    content.classList.remove('show','aos-animate');
                 }
             });
     
@@ -99,6 +90,8 @@ if(FILTER_ITEMS?.length){
             if (SELECTED_FILTERS.length === 0) {
                 BOXS_CONTENT.forEach(content => content.classList.add('show'));
             }
+
+            AOS.init();
         });
     });
 }

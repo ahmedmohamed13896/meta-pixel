@@ -43,3 +43,9 @@
 .services-list >div:hover .service-img-wrap img{
     transform: scale(1.1);
 }
+
+@media screen and (max-width:992px) {
+    .service-info-wrap{
+        text-align: center;
+    }
+}
