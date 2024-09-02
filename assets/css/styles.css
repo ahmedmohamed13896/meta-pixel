@@ -521,6 +521,10 @@ footer .bullet-wrap {
     .header-wrapper video{
         position: static;
     }
+
+    .bullet{
+        top: 40px;
+    }
 }
 
 @media (max-width: 530px) {
