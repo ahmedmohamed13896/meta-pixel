@@ -1,27 +1,28 @@
-const NAV_BAR = document.querySelector('.navbar');
-const HEADER = document.querySelector('.header-wrapper');
-const MAIN_NAV = document.querySelector('#main_navbar');
-const NAV_TOGGLER = document.querySelector('.navbar-toggler');
-const SECTION_PROJECTS = document.querySelector('.project-details');
-const SECTION_PROJECT_DETAILS = document.querySelector('.project-wrap');
-const SECTION_SERVICES_DETAILS = document.querySelector('.services-details');
-const SECTION_ABOUT = document.querySelector('.about-details');
-const SECTIONS = document.querySelectorAll('.bullet-section');
-const BULLETS = document.querySelectorAll('.bullet');
+const NAV_BAR = document.querySelector(".navbar");
+const HEADER = document.querySelector(".header-wrapper");
+const MAIN_NAV = document.querySelector("#main_navbar");
+const NAV_TOGGLER = document.querySelector(".navbar-toggler");
+const SECTION_PROJECTS = document.querySelector(".project-details");
+const SECTION_PROJECT_DETAILS = document.querySelector(".project-wrap");
+const SECTION_SERVICES_DETAILS = document.querySelector(".services-details");
+const SECTION_ABOUT = document.querySelector(".about-details");
+const SECTIONS = document.querySelectorAll(".bullet-section");
+const BULLETS = document.querySelectorAll(".bullet");
 const HALF_WINDOW_HEIGHT = window.innerHeight / 2;
 const FULL_WINDOW_HEIGHT = window.innerHeight;
-const BUTTON_SCROLL_DOWN = document.querySelector('#btn_scroll_down');
-const PROJECT_FILTER = document.querySelector('#project_filter');
-const FILTER_ITEMS = document.querySelectorAll('.filter-item');
-const BOXS_CONTENT = document.querySelectorAll('.project-list .grid .box');
-const NAV_COLLAPSE = document.querySelector('.navbar-collapse');
+const BUTTON_SCROLL_DOWN = document.querySelector("#btn_scroll_down");
+const PROJECT_FILTER = document.querySelector("#project_filter");
+const FILTER_ITEMS = document.querySelectorAll(".filter-item");
+const BOXS_CONTENT = document.querySelectorAll(".project-list .grid .box");
+const NAV_COLLAPSE = document.querySelector(".navbar-collapse");
 const NAV_HEIGHT = 100;
-let SELECTED_FILTERS = ['prjection-mapping',];
-const LOADER = document.querySelector('.loader_section');
+let SELECTED_FILTERS = ["prjection-mapping"];
+const LOADER = document.querySelector(".loader_section");
 let currentIndex = 0;
 let intervalId;
-const BASE_IMG_URL = './assets/images/'; 
-const PROJECT_CONTAINERS = document.querySelectorAll('.box-img-wrapper');
+const BASE_IMG_URL = "./assets/images/project-details/";
+const BASE_PRO_VIDEO_URL = "./assets/videos/";
+const PROJECT_CONTAINERS = document.querySelectorAll(".box-img-wrapper");
 const PROJECT_KENDY_IMGS = ["kendy1.jpg", "kendy2.jpg", "kendy3.jpg"];
 const PROJECT_RALLY_IMGS = [
   "rally1.jpg",
@@ -32,4 +33,52 @@ const PROJECT_RALLY_IMGS = [
 ];
 const PROJECT_ZAABAL_IMGS = ["zaabal1.jpg", "zaabal2.jpg", "zaabal3.jpg"];
 const PROJECT_ZEEIN_IMGS = ["ze-ein1.jpg", "ze-ein2.jpg", "ze-ein3.jpg"];
+const PROJECT_AQWAN_IMGS = ["aqwan1.jpg","aqwan2.jpg","aqwan3.jpg","aqwan4.jpg"];
+const PROJECT_ASR_HERFA_IMGS = ["asr-herfa1.jpg","asr-herfa2.jpg","asr-herfa3.jpg","asr-herfa4.jpg"];
+const PROJECT_CAMEL_IMGS = ["camel1.jpg","camel2.jpg","camel3.jpg","camel4.jpg","camel5.jpg","camel6.jpg","camel7.jpg","camel8.jpg","camel9.jpg","camel10.jpg","camel11.jpg","camel12.jpg"];
 
+const projects = [
+  {
+    id: 1,
+    name: "kendy",
+    images: PROJECT_KENDY_IMGS,
+    video: `${BASE_PRO_VIDEO_URL}Kendy.mp4`
+  },
+  {
+    id: 2,
+    name: "rally",
+    images: PROJECT_RALLY_IMGS,
+    video: `${BASE_PRO_VIDEO_URL}Rally.mp4`
+  },
+  {
+    id: 3,
+    name: "zaabal",
+    images: PROJECT_ZAABAL_IMGS,
+    video: `${BASE_PRO_VIDEO_URL}Zaabal.mp4`
+  },
+  {
+    id: 4,
+    name: "ze-ein",
+    images: PROJECT_ZEEIN_IMGS,
+    video: `${BASE_PRO_VIDEO_URL}Zeein.mp4`
+  },
+  {
+    id: 5,
+    name: "aqwan",
+    images: PROJECT_AQWAN_IMGS,
+    video: `${BASE_PRO_VIDEO_URL}Aqwan.mp4`
+  },
+  {
+    id: 6,
+    name: "asr-herfa",
+    images: PROJECT_ASR_HERFA_IMGS,
+    video: `${BASE_PRO_VIDEO_URL}Asr-herfa.mp4`
+  },
+  {
+    id: 7,
+    name: "camel",
+    images: PROJECT_CAMEL_IMGS,
+    video: `${BASE_PRO_VIDEO_URL}Camel.mp4`
+  },
+
+];
