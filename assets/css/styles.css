@@ -319,6 +319,11 @@ hr.line {
     overflow: hidden;
 }
 
+.projects-grid-container .box .box-img-wrapper img{
+    height: 24rem;
+    object-fit: cover;
+}
+
 .projects-grid-container .box:hover img {
     transform: scale(1.1);
 }
