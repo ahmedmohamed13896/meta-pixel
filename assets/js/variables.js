@@ -13,7 +13,6 @@ const FULL_WINDOW_HEIGHT = window.innerHeight;
 const BUTTON_SCROLL_DOWN = document.querySelector("#btn_scroll_down");
 const PROJECT_FILTER = document.querySelector("#project_filter");
 const FILTER_ITEMS = document.querySelectorAll(".filter-item");
-const BOXS_CONTENT = document.querySelectorAll(".project-list .grid .box");
 const NAV_COLLAPSE = document.querySelector(".navbar-collapse");
 const NAV_HEIGHT = 100;
 let SELECTED_FILTERS = ["prjection-mapping"];
@@ -61,7 +60,7 @@ const PROJECT_CAMEL_IMGS = [
 ];
 
 const PROJECT_EMARA_IMGS = ["emara1.jpg", "emara2.jpg", "emara3.jpg"];
-const PROJECT_QSHLA_IMGS = ["qshla1.jpg", "qshla2.jpg", "qshla13.jpg"];
+const PROJECT_QSHLA_IMGS = ["qshla1.jpg", "qshla2.jpg", "qshla3.jpg"];
 const PROJECT_SOR_IMGS = ["sor1.jpg", "sor2.jpg", "sor3.jpg", "sor4.jpg"];
 const PROJECT_TADAWL_IMGS = ["tadawl1.jpg"];
 
@@ -71,98 +70,109 @@ const projects = [
     name: "kendy",
     images: PROJECT_KENDY_IMGS,
     video: `${BASE_PRO_VIDEO_URL}Kendy.mp4`,
-    category: "",
-    title: "",
-    description: "",
+    category: "prjection-mapping",
+    title: "Projection Mapping",
+    description:
+      "2 lines for project description here..Short 2 lines for project description here..",
   },
   {
     id: 2,
     name: "rally",
     images: PROJECT_RALLY_IMGS,
     video: `${BASE_PRO_VIDEO_URL}Rally.mp4`,
-    category: "",
-    title: "",
-    description: "",
+    category: "stage-design",
+    title: "Stage Design",
+    description:
+      "2 lines for project description here..Short 2 lines for project description here..",
   },
   {
     id: 3,
     name: "zaabal",
     images: PROJECT_ZAABAL_IMGS,
     video: `${BASE_PRO_VIDEO_URL}Zaabal.mp4`,
-    category: "",
-    title: "",
-    description: "",
+    category: "content-creation",
+    title: "Content Creation",
+    description:
+      "2 lines for project description here..Short 2 lines for project description here..",
   },
   {
     id: 4,
     name: "ze-ein",
     images: PROJECT_ZEEIN_IMGS,
     video: `${BASE_PRO_VIDEO_URL}Zeein.mp4`,
-    category: "",
-    title: "",
-    description: "",
+    category: "3d-animation",
+    title: "3D Animation",
+    description:
+      "2 lines for project description here..Short 2 lines for project description here..",
   },
   {
     id: 5,
     name: "aqwan",
     images: PROJECT_AQWAN_IMGS,
     video: `${BASE_PRO_VIDEO_URL}Aqwan.mp4`,
-    category: "",
-    title: "",
-    description: "",
+    category: "hologram",
+    title: "Hologram",
+    description:
+      "2 lines for project description here..Short 2 lines for project description here..",
   },
   {
     id: 6,
     name: "asr-herfa",
     images: PROJECT_ASR_HERFA_IMGS,
     video: `${BASE_PRO_VIDEO_URL}Asr-herfa.mp4`,
-    category: "",
-    title: "",
-    description: "",
+    category: "vfx",
+    title: "VFX",
+    description:
+      "2 lines for project description here..Short 2 lines for project description here..",
   },
   {
     id: 7,
     name: "camel",
     images: PROJECT_CAMEL_IMGS,
     video: `${BASE_PRO_VIDEO_URL}Camel.mp4`,
-    category: "",
-    title: "",
-    description: "",
+    category: "hologram",
+    title: "Hologram",
+    description:
+      "2 lines for project description here..Short 2 lines for project description here..",
   },
   {
     id: 8,
     name: "emara",
     images: PROJECT_EMARA_IMGS,
     video: `${BASE_PRO_VIDEO_URL}Emara.mp4`,
-    category: "",
-    title: "",
-    description: "",
+    category: "3d-animation",
+    title: "3D Animation",
+    description:
+      "2 lines for project description here..Short 2 lines for project description here..",
   },
   {
     id: 9,
     name: "qshla",
     images: PROJECT_QSHLA_IMGS,
-    video: `${BASE_PRO_VIDEO_URL}wshla.mp4`,
-    category: "",
-    title: "",
-    description: "",
+    video: `${BASE_PRO_VIDEO_URL}Qshla.mp4`,
+    category: "content-creation",
+    title: "Content Creation",
+    description:
+      "2 lines for project description here..Short 2 lines for project description here..",
   },
   {
     id: 10,
     name: "sor",
     images: PROJECT_SOR_IMGS,
     video: `${BASE_PRO_VIDEO_URL}Sor.mp4`,
-    category: "",
-    title: "",
-    description: "",
+    category: "stage-design",
+    title: "Stage Design",
+    description:
+      "2 lines for project description here..Short 2 lines for project description here..",
   },
   {
     id: 11,
     name: "tadawl",
     images: PROJECT_TADAWL_IMGS,
     video: `${BASE_PRO_VIDEO_URL}Tadawl.mp4`,
-    category: "",
-    title: "",
-    description: "",
+    category: "prjection-mapping",
+    title: "Projection Mapping",
+    description:
+      "2 lines for project description here..Short 2 lines for project description here..",
   },
 ];
