@@ -56,46 +56,6 @@ if (BUTTON_SCROLL_DOWN) {
   });
 }
 
-// JavaScript to handle multi-select filter in Work.html page
-if (FILTER_ITEMS?.length) {
-  FILTER_ITEMS.forEach((tab) => {
-    tab.addEventListener("click", () => {
-      const filter = tab.getAttribute("data-filter");
-
-      // Toggle selected state
-      if (tab.classList.contains("selected")) {
-        tab.classList.remove("selected");
-        SELECTED_FILTERS = SELECTED_FILTERS.filter((f) => f !== filter);
-      } else {
-        tab.classList.add("selected");
-        SELECTED_FILTERS.push(filter);
-      }
-
-      // Show or hide content based on selected filters
-      BOXS_CONTENT.forEach((content) => {
-        const contentClasses = content.classList;
-
-        // Show content if it matches any of the selected filters
-        if (SELECTED_FILTERS.some((f) => contentClasses.contains(f))) {
-          content.classList.add("show");
-        } else {
-          content.classList.remove("show", "aos-animate");
-        }
-      });
-
-      // If no filters are selected, show all content
-      if (SELECTED_FILTERS.length === 0) {
-        BOXS_CONTENT.forEach((content) => content.classList.add("show"));
-      }
-
-      AOS.init();
-    });
-  });
-}
-
-// Initialize by showing all content
-BOXS_CONTENT.forEach((content) => content.classList.add("show"));
-
 // Function to change the image
 function changeImage(imgContainer) {
   currentIndex = (currentIndex + 1) % getSelectedImages(imgContainer).length;
@@ -118,27 +78,25 @@ function stopImageLoop(imgContainer) {
   currentIndex = 0;
 }
 
-function getSelectedImages(imgContainer) {
-  let selectedImages = [];
-  const imgSrc = imgContainer.children[0].src;
-  if (imgSrc.includes("rally")) {
-    selectedImages = PROJECT_RALLY_IMGS;
-  } else if (imgSrc.includes("kendy")) {
-    selectedImages = PROJECT_KENDY_IMGS;
-  } else if (imgSrc.includes("zaabal")) {
-    selectedImages = PROJECT_ZAABAL_IMGS;
-  } else {
-    selectedImages = PROJECT_ZEEIN_IMGS;
-  }
-  return selectedImages;
-}
+const projectImageMap = {
+  rally: PROJECT_RALLY_IMGS,
+  kendy: PROJECT_KENDY_IMGS,
+  zaabal: PROJECT_ZAABAL_IMGS,
+  "ze-ein": PROJECT_ZEEIN_IMGS,
+  aqwan: PROJECT_AQWAN_IMGS,
+  "asr-herfa": PROJECT_ASR_HERFA_IMGS,
+  camel: PROJECT_CAMEL_IMGS,
+  emara: PROJECT_EMARA_IMGS,
+  qshla: PROJECT_QSHLA_IMGS,
+  sor: PROJECT_SOR_IMGS,
+  tadawl: PROJECT_TADAWL_IMGS
+};
 
-// Event listeners for hover
-PROJECT_CONTAINERS.forEach((imgContainer) => {
-  imgContainer.addEventListener("mouseenter", () => {
-    startImageLoop(imgContainer);
-  });
-  imgContainer.addEventListener("mouseleave", () => {
-    stopImageLoop(imgContainer);
-  });
-});
+function getSelectedImages(imgContainer) {
+  const imgSrc = imgContainer.children[0].src;
+  for (const key in projectImageMap) {
+    if (imgSrc.includes(key)) {
+      return projectImageMap[key];
+    }
+  }
+}
