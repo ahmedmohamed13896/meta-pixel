@@ -33,52 +33,136 @@ const PROJECT_RALLY_IMGS = [
 ];
 const PROJECT_ZAABAL_IMGS = ["zaabal1.jpg", "zaabal2.jpg", "zaabal3.jpg"];
 const PROJECT_ZEEIN_IMGS = ["ze-ein1.jpg", "ze-ein2.jpg", "ze-ein3.jpg"];
-const PROJECT_AQWAN_IMGS = ["aqwan1.jpg","aqwan2.jpg","aqwan3.jpg","aqwan4.jpg"];
-const PROJECT_ASR_HERFA_IMGS = ["asr-herfa1.jpg","asr-herfa2.jpg","asr-herfa3.jpg","asr-herfa4.jpg"];
-const PROJECT_CAMEL_IMGS = ["camel1.jpg","camel2.jpg","camel3.jpg","camel4.jpg","camel5.jpg","camel6.jpg","camel7.jpg","camel8.jpg","camel9.jpg","camel10.jpg","camel11.jpg","camel12.jpg"];
+const PROJECT_AQWAN_IMGS = [
+  "aqwan1.jpg",
+  "aqwan2.jpg",
+  "aqwan3.jpg",
+  "aqwan4.jpg",
+];
+const PROJECT_ASR_HERFA_IMGS = [
+  "asr-herfa1.jpg",
+  "asr-herfa2.jpg",
+  "asr-herfa3.jpg",
+  "asr-herfa4.jpg",
+];
+const PROJECT_CAMEL_IMGS = [
+  "camel1.jpg",
+  "camel2.jpg",
+  "camel3.jpg",
+  "camel4.jpg",
+  "camel5.jpg",
+  "camel6.jpg",
+  "camel7.jpg",
+  "camel8.jpg",
+  "camel9.jpg",
+  "camel10.jpg",
+  "camel11.jpg",
+  "camel12.jpg",
+];
+
+const PROJECT_EMARA_IMGS = ["emara1.jpg", "emara2.jpg", "emara3.jpg"];
+const PROJECT_QSHLA_IMGS = ["qshla1.jpg", "qshla2.jpg", "qshla13.jpg"];
+const PROJECT_SOR_IMGS = ["sor1.jpg", "sor2.jpg", "sor3.jpg", "sor4.jpg"];
+const PROJECT_TADAWL_IMGS = ["tadawl1.jpg"];
 
 const projects = [
   {
     id: 1,
     name: "kendy",
     images: PROJECT_KENDY_IMGS,
-    video: `${BASE_PRO_VIDEO_URL}Kendy.mp4`
+    video: `${BASE_PRO_VIDEO_URL}Kendy.mp4`,
+    category: "",
+    title: "",
+    description: "",
   },
   {
     id: 2,
     name: "rally",
     images: PROJECT_RALLY_IMGS,
-    video: `${BASE_PRO_VIDEO_URL}Rally.mp4`
+    video: `${BASE_PRO_VIDEO_URL}Rally.mp4`,
+    category: "",
+    title: "",
+    description: "",
   },
   {
     id: 3,
     name: "zaabal",
     images: PROJECT_ZAABAL_IMGS,
-    video: `${BASE_PRO_VIDEO_URL}Zaabal.mp4`
+    video: `${BASE_PRO_VIDEO_URL}Zaabal.mp4`,
+    category: "",
+    title: "",
+    description: "",
   },
   {
     id: 4,
     name: "ze-ein",
     images: PROJECT_ZEEIN_IMGS,
-    video: `${BASE_PRO_VIDEO_URL}Zeein.mp4`
+    video: `${BASE_PRO_VIDEO_URL}Zeein.mp4`,
+    category: "",
+    title: "",
+    description: "",
   },
   {
     id: 5,
     name: "aqwan",
     images: PROJECT_AQWAN_IMGS,
-    video: `${BASE_PRO_VIDEO_URL}Aqwan.mp4`
+    video: `${BASE_PRO_VIDEO_URL}Aqwan.mp4`,
+    category: "",
+    title: "",
+    description: "",
   },
   {
     id: 6,
     name: "asr-herfa",
     images: PROJECT_ASR_HERFA_IMGS,
-    video: `${BASE_PRO_VIDEO_URL}Asr-herfa.mp4`
+    video: `${BASE_PRO_VIDEO_URL}Asr-herfa.mp4`,
+    category: "",
+    title: "",
+    description: "",
   },
   {
     id: 7,
     name: "camel",
     images: PROJECT_CAMEL_IMGS,
-    video: `${BASE_PRO_VIDEO_URL}Camel.mp4`
+    video: `${BASE_PRO_VIDEO_URL}Camel.mp4`,
+    category: "",
+    title: "",
+    description: "",
   },
-
+  {
+    id: 8,
+    name: "emara",
+    images: PROJECT_EMARA_IMGS,
+    video: `${BASE_PRO_VIDEO_URL}Emara.mp4`,
+    category: "",
+    title: "",
+    description: "",
+  },
+  {
+    id: 9,
+    name: "qshla",
+    images: PROJECT_QSHLA_IMGS,
+    video: `${BASE_PRO_VIDEO_URL}wshla.mp4`,
+    category: "",
+    title: "",
+    description: "",
+  },
+  {
+    id: 10,
+    name: "sor",
+    images: PROJECT_SOR_IMGS,
+    video: `${BASE_PRO_VIDEO_URL}Sor.mp4`,
+    category: "",
+    title: "",
+    description: "",
+  },
+  {
+    id: 11,
+    name: "tadawl",
+    images: PROJECT_TADAWL_IMGS,
+    video: `${BASE_PRO_VIDEO_URL}Tadawl.mp4`,
+    category: "",
+    title: "",
+    description: "",
+  },
 ];
