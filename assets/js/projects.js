@@ -1,6 +1,6 @@
 const container = document.querySelector(".project-list .grid");
 projects.map((pro) => {
-  const newProjectHTML = `<div class="box ${pro.category}" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000" data-aos-easing="linear">
+  const newProjectHTML = `<a href="./project.html?id=${pro.id}" class="box ${pro.category}" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000" data-aos-easing="linear">
                     <div class="box-img-wrapper w-100">
                         <img src="${BASE_IMG_URL}${pro.images[0]}" alt="project"
                             class="img-fluid w-100">
@@ -11,11 +11,11 @@ projects.map((pro) => {
                             <p class="mt-2 clamp-two-lines">${pro.description}</p>
                             <div class="mb-4">
                                 <img src="./assets/images/ArrowRight.svg" alt="arrow" class="img-fluid">
-                                <a href="./project.html?id=${pro.id}" class="text-main m-plus-1p-bold link">View full project</a>
+                                <span class="text-main m-plus-1p-bold link">View full project</span>
                             </div>
                         </div>
                     </div>
-                </div>
+                </a>
 `;
 container.insertAdjacentHTML("beforeend", newProjectHTML);
 });

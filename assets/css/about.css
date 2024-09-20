@@ -1,7 +1,7 @@
 /* about page style  */
 .about__header{
     height: 100vh;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 2.69%, #141218 100%), url('../images/about/about-header.jpeg');
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 2.69%, #141218 100%), url('../images/img1.jfif');
     background-position: center bottom;
     background-size: cover;
     display: flex;

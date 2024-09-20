@@ -9,7 +9,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
     <link rel="manifest" href="./site.webmanifest">
-    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5" />
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <!-- AOS Animation -->
@@ -64,10 +64,8 @@
             <p class="m-plus-1p-medium text-uppercase header__subTitle">Where Every Event Becomes an <span
                     class="text-main">Unforgettable Spectacle!</span></p> 
         </div> -->
-        <video autoplay muted="false" loop playsinline preload="auto" poster="./assets/images/img1.jfif">
-            <source src="./assets/videos/new-meta-demo.mp4" type="video/mp4" media="(min-width: 768px)">
-            <source src="./assets/videos/new-meta-demo.mp4" type="video/mp4" media="(max-width: 767px)">
-            <source src="./assets/videos/meta-demo.webm" type="video/webm">
+        <video muted autoplay loop playsinline preload="auto" poster="./assets/images/poster.png">
+            <source src="./assets/videos/meta-demo_desktop.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
     </header>
@@ -136,14 +134,16 @@
             <div class="row ps-4">
                 <div class="col-12">
                     <div class="d-flex justify-content-between align-items-start flex-column flex-lg-row">
-                        <h2 class="sec-title text-uppercase" data-aos="fade-left" data-aos-duration="1000" data-aos-easing="linear">Services</h2>
+                        <h2 class="sec-title text-uppercase" data-aos="fade-left" data-aos-duration="1000"
+                            data-aos-easing="linear">Services</h2>
                         <a href="./services.html" data-aos="fade-left" data-aos-duration="1000" data-aos-easing="linear"
                             class="btn btn-shadow text-uppercase work-sans-bold text-main py-2 px-4 my-4">
                             <img src="./assets/images/ArrowRight.svg" alt="arrow" class="img-fluid">
                             View all Services</a>
                     </div>
                     <div class="row mt-4">
-                        <div class="col-12 col-md-6 col-lg-3 mx-0 my-2" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="linear">
+                        <div class="col-12 col-md-6 col-lg-3 mx-0 my-2" data-aos="fade-up" data-aos-duration="1000"
+                            data-aos-easing="linear">
                             <div
                                 class="service-item bg-gradient px-4 py-5 rounded-xl h-100  d-flex flex-column justify-content-between">
                                 <a href="#">
@@ -162,7 +162,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-3 mx-0 my-2" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="linear">
+                        <div class="col-12 col-md-6 col-lg-3 mx-0 my-2" data-aos="fade-up" data-aos-duration="1000"
+                            data-aos-easing="linear">
                             <div
                                 class="service-item bg-gradient px-4 py-5 rounded-xl h-100  d-flex flex-column justify-content-between">
                                 <a href="#">
@@ -180,7 +181,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-3 mx-0 my-2" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="linear">
+                        <div class="col-12 col-md-6 col-lg-3 mx-0 my-2" data-aos="fade-up" data-aos-duration="1000"
+                            data-aos-easing="linear">
                             <div
                                 class="service-item bg-gradient px-4 py-5 rounded-xl h-100  d-flex flex-column justify-content-between">
                                 <a href="#">
@@ -199,7 +201,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-3 mx-0 my-2" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="linear">
+                        <div class="col-12 col-md-6 col-lg-3 mx-0 my-2" data-aos="fade-up" data-aos-duration="1000"
+                            data-aos-easing="linear">
                             <div
                                 class="service-item bg-gradient px-4 py-5 rounded-xl h-100  d-flex flex-column justify-content-between">
                                 <a href="#">
@@ -232,88 +235,100 @@
             </div>
             <div class="row ps-4 pt-5">
                 <div class="d-flex justify-content-between align-items-start flex-column flex-lg-row">
-                    <h2 class="sec-title text-uppercase" data-aos="fade-left" data-aos-duration="1000" data-aos-easing="linear">Our Projects</h2>
+                    <h2 class="sec-title text-uppercase" data-aos="fade-left" data-aos-duration="1000"
+                        data-aos-easing="linear">Our Projects</h2>
                     <a href="./projects.html" data-aos="fade-left" data-aos-duration="1000" data-aos-easing="linear"
                         class="btn btn-shadow text-uppercase work-sans-bold text-main py-2 px-4 my-4">
                         <img src="./assets/images/ArrowRight.svg" alt="arrow" class="img-fluid">
                         View all projects</a>
                 </div>
                 <div class="projects-grid-container mt-4">
-                    <div class="box" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="linear">
+                    <a href="./project.html?id=1" class="box" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="linear">
                         <div class="box-img-wrapper w-100">
-                            <img src="./assets/images/project-details/kendy1.jpg" alt="project" class="img-fluid w-100" id="kendy-img">
+                            <img src="./assets/images/project-details/kendy1.jpg" alt="project" class="img-fluid w-100"
+                                id="kendy-img">
                         </div>
                         <div class="px-3">
-                            <h4 class="boya-alternative text-uppercase mt-3 card-title">Project Name</h4>
+                            <h4 class="boya-alternative text-uppercase mt-3 card-title">Kendy</h4>
                             <div class="d-flex flex-column justify-content-between flex-grow-1 m-plus-1p-medium">
-                                <p class="mt-2 clamp-two-lines">2 lines for project description here..Short 2 lines for
+                                <p class="mt-2 clamp-two-lines">2 lines for project description here..Short 2 lines
+                                    for
                                     project
                                     description
                                     here..</p>
                                 <div class="mb-4">
                                     <img src="./assets/images/ArrowRight.svg" alt="arrow" class="img-fluid">
-                                    <a href="./project.html?id=1" class="text-main m-plus-1p-bold link">View full project</a>
+                                    <span class="text-main m-plus-1p-bold link">View full
+                                        project</span>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="box" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="linear">
+                    </a>
+                    <a href="./project.html?id=2" class="box" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="linear">
                         <div class="box-img-wrapper w-100">
                             <img src="./assets/images/project-details/rally1.jpg" alt="project" class="img-fluid w-100">
                         </div>
                         <div class="px-3">
-                            <h4 class="boya-alternative text-uppercase mt-3 card-title">Project Name</h4>
+                            <h4 class="boya-alternative text-uppercase mt-3 card-title">Rally</h4>
                             <div class="d-flex flex-column justify-content-between flex-grow-1 m-plus-1p-medium">
-                                <p class="mt-2 clamp-two-lines">2 lines for project description here..Short 2 lines for
+                                <p class="mt-2 clamp-two-lines">2 lines for project description here..Short 2 lines
+                                    for
                                     project
                                     description
                                     here..</p>
                                 <div class="mb-4">
                                     <img src="./assets/images/ArrowRight.svg" alt="arrow" class="img-fluid">
-                                    <a href="./project.html?id=2" class="text-main m-plus-1p-bold link">View full project</a>
+                                    <span href="./project.html?id=2" class="text-main m-plus-1p-bold link">View full
+                                        project</span>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="box" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="linear">
+                    </a>
+
+                    <a href="./project.html?id=3" class="box" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="linear">
                         <div class="box-img-wrapper w-100">
-                            <img src="./assets/images/project-details/zaabal1.jpg" alt="project" class="img-fluid w-100">
+                            <img src="./assets/images/project-details/zaabal1.jpg" alt="project"
+                                class="img-fluid w-100">
                         </div>
                         <div class="px-3">
-                            <h4 class="boya-alternative text-uppercase mt-3 card-title">Project Name</h4>
+                            <h4 class="boya-alternative text-uppercase mt-3 card-title">Zaabal</h4>
                             <div class="d-flex flex-column justify-content-between flex-grow-1 m-plus-1p-medium">
-                                <p class="mt-2 clamp-two-lines">2 lines for project description here..Short 2 lines for
+                                <p class="mt-2 clamp-two-lines">2 lines for project description here..Short 2 lines
+                                    for
                                     project
                                     description
                                     here..</p>
                                 <div class="mb-4">
                                     <img src="./assets/images/ArrowRight.svg" alt="arrow" class="img-fluid">
-                                    <a href="./project.html?id=3" class="text-main m-plus-1p-bold link">View full project</a>
+                                    <span class="text-main m-plus-1p-bold link">View full
+                                        project</span>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="box" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="linear">
+                    </a>
+                    <a  href="./project.html?id=4" class="box" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="linear">
                         <div class="box-img-wrapper w-100">
-                            <img src="./assets/images/project-details/ze-ein1.jpg" alt="project" class="img-fluid w-100">
+                            <img src="./assets/images/project-details/ze-ein1.jpg" alt="project"
+                                class="img-fluid w-100">
                         </div>
                         <div class="px-3">
-                            <h4 class="boya-alternative text-uppercase mt-3 card-title">Project Name</h4>
+                            <h4 class="boya-alternative text-uppercase mt-3 card-title">Zei Ein</h4>
                             <div class="d-flex flex-column justify-content-between flex-grow-1 m-plus-1p-medium">
-                                <p class="mt-2 clamp-two-lines">2 lines for project description here..Short 2 lines for
+                                <p class="mt-2 clamp-two-lines">2 lines for project description here..Short 2 lines
+                                    for
                                     project
                                     description
                                     here..</p>
                                 <div class="mb-4">
                                     <img src="./assets/images/ArrowRight.svg" alt="arrow" class="img-fluid">
-                                    <a href="./project.html?id=4" class="text-main m-plus-1p-bold link">View full project</a>
+                                    <span class="text-main m-plus-1p-bold link">View full
+                                        project</span>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
-
         </div>
     </section>
     <!-- Get in Touch -->
@@ -323,7 +338,8 @@
                 <div class="bullet" data-section="about"></div>
             </div>
             <div class="row pt-5 ps-4">
-                <h2 class="sec-title text-uppercase" data-aos="fade-left" data-aos-duration="1000" data-aos-easing="linear">Get in touch</h2>
+                <h2 class="sec-title text-uppercase" data-aos="fade-left" data-aos-duration="1000"
+                    data-aos-easing="linear">Get in touch</h2>
                 <div class="row mt-4">
                     <div class="col-12 me-md-auto col-md-5">
                         <h4 class="text-uppercase text-main m-plus-1p-medium" data-aos="fade-left"
@@ -354,23 +370,27 @@
                     </div>
                     <div class="col-12 col-md-6">
                         <form class="row m-plus-1p-medium text-gray-md">
-                            <div class="form-group col-6 my-2" data-aos="fade-right" data-aos-duration="1000" data-aos-easing="linear">
+                            <div class="form-group col-6 my-2" data-aos="fade-right" data-aos-duration="1000"
+                                data-aos-easing="linear">
                                 <label for="username" class="contact_us-label mb-2">Name</label>
                                 <input type="text" class="form-control contact_us-form-control" id="username"
                                     placeholder="Your name here">
                             </div>
-                            <div class="form-group col-6 my-2" data-aos="fade-left" data-aos-duration="1000" data-aos-easing="linear">
+                            <div class="form-group col-6 my-2" data-aos="fade-left" data-aos-duration="1000"
+                                data-aos-easing="linear">
                                 <label for="email1" class="contact_us-label mb-2">Email</label>
                                 <input type="email" class="form-control contact_us-form-control" id="email1"
                                     aria-describedby="emailHelp" placeholder="example@email.com">
                             </div>
 
-                            <div class="form-group col-12 my-2" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="linear">
+                            <div class="form-group col-12 my-2" data-aos="fade-up" data-aos-duration="1000"
+                                data-aos-easing="linear">
                                 <label for="message" class="contact_us-label mb-2">Message</label>
                                 <textarea class="form-control contact_us-form-control resize-none" id="message" rows="3"
                                     placeholder="Text here"></textarea>
                             </div>
-                            <div class="col-12 my-2" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="linear">
+                            <div class="col-12 my-2" data-aos="fade-up" data-aos-duration="1000"
+                                data-aos-easing="linear">
                                 <button type="button"
                                     class="btn btn-gradient w-100 text-main text-uppercase m-plus-1p-bold py-2">Submit</button>
                             </div>
@@ -389,13 +409,15 @@
                 </div>
 
                 <div class="row m-plus-1p-medium pt-5 ps-4 w-100">
-                    <div class="col-12 col-md-6" data-aos="fade-right" data-aos-duration="1000" data-aos-easing="linear">
+                    <div class="col-12 col-md-6" data-aos="fade-right" data-aos-duration="1000"
+                        data-aos-easing="linear">
                         <div class="logo-wrapper">
                             <img src="assets/images/Logo.png" alt="Logo" class="img-fluid" />
                         </div>
                         <p class="text-gray-md copy-right-txt my-4">© 2024 Metapixel, All Rights Reserved.</p>
                     </div>
-                    <div class="col-12 col-md-6 follow-us" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="linear">
+                    <div class="col-12 col-md-6 follow-us" data-aos="fade-up" data-aos-duration="1000"
+                        data-aos-easing="linear">
                         <h4 class="text-gray-md text-uppercase mb-4 d-flex gap-2 align-items-center">Follow us <img
                                 src="./assets/images/ArrowRightGray.svg" alt="arrowWright"></h4>
                         <ul class="list-none grid-media-list">

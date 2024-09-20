@@ -14,6 +14,7 @@ const BUTTON_SCROLL_DOWN = document.querySelector("#btn_scroll_down");
 const PROJECT_FILTER = document.querySelector("#project_filter");
 const FILTER_ITEMS = document.querySelectorAll(".filter-item");
 const NAV_COLLAPSE = document.querySelector(".navbar-collapse");
+const SECTION_TITLE = document.querySelector('.sec-title')
 const NAV_HEIGHT = 100;
 let SELECTED_FILTERS = ["prjection-mapping"];
 const LOADER = document.querySelector(".loader_section");
@@ -71,7 +72,7 @@ const projects = [
     images: PROJECT_KENDY_IMGS,
     video: `${BASE_PRO_VIDEO_URL}Kendy.mp4`,
     category: "prjection-mapping",
-    title: "Projection Mapping",
+    title: "Kendy",
     description:
       "2 lines for project description here..Short 2 lines for project description here..",
   },
@@ -81,7 +82,7 @@ const projects = [
     images: PROJECT_RALLY_IMGS,
     video: `${BASE_PRO_VIDEO_URL}Rally.mp4`,
     category: "stage-design",
-    title: "Stage Design",
+    title: "Rally",
     description:
       "2 lines for project description here..Short 2 lines for project description here..",
   },
@@ -91,7 +92,7 @@ const projects = [
     images: PROJECT_ZAABAL_IMGS,
     video: `${BASE_PRO_VIDEO_URL}Zaabal.mp4`,
     category: "content-creation",
-    title: "Content Creation",
+    title: "Zaabal",
     description:
       "2 lines for project description here..Short 2 lines for project description here..",
   },
@@ -101,7 +102,7 @@ const projects = [
     images: PROJECT_ZEEIN_IMGS,
     video: `${BASE_PRO_VIDEO_URL}Zeein.mp4`,
     category: "3d-animation",
-    title: "3D Animation",
+    title: "Ze Ein",
     description:
       "2 lines for project description here..Short 2 lines for project description here..",
   },
@@ -111,7 +112,7 @@ const projects = [
     images: PROJECT_AQWAN_IMGS,
     video: `${BASE_PRO_VIDEO_URL}Aqwan.mp4`,
     category: "hologram",
-    title: "Hologram",
+    title: "Aqwan",
     description:
       "2 lines for project description here..Short 2 lines for project description here..",
   },
@@ -121,7 +122,7 @@ const projects = [
     images: PROJECT_ASR_HERFA_IMGS,
     video: `${BASE_PRO_VIDEO_URL}Asr-herfa.mp4`,
     category: "vfx",
-    title: "VFX",
+    title: "Asr W 7rfa",
     description:
       "2 lines for project description here..Short 2 lines for project description here..",
   },
@@ -131,7 +132,7 @@ const projects = [
     images: PROJECT_CAMEL_IMGS,
     video: `${BASE_PRO_VIDEO_URL}Camel.mp4`,
     category: "hologram",
-    title: "Hologram",
+    title: "Camel",
     description:
       "2 lines for project description here..Short 2 lines for project description here..",
   },
@@ -141,7 +142,7 @@ const projects = [
     images: PROJECT_EMARA_IMGS,
     video: `${BASE_PRO_VIDEO_URL}Emara.mp4`,
     category: "3d-animation",
-    title: "3D Animation",
+    title: "Emara",
     description:
       "2 lines for project description here..Short 2 lines for project description here..",
   },
@@ -151,7 +152,7 @@ const projects = [
     images: PROJECT_QSHLA_IMGS,
     video: `${BASE_PRO_VIDEO_URL}Qshla.mp4`,
     category: "content-creation",
-    title: "Content Creation",
+    title: "Qshla",
     description:
       "2 lines for project description here..Short 2 lines for project description here..",
   },
@@ -161,7 +162,7 @@ const projects = [
     images: PROJECT_SOR_IMGS,
     video: `${BASE_PRO_VIDEO_URL}Sor.mp4`,
     category: "stage-design",
-    title: "Stage Design",
+    title: "El Sor",
     description:
       "2 lines for project description here..Short 2 lines for project description here..",
   },
@@ -171,7 +172,7 @@ const projects = [
     images: PROJECT_TADAWL_IMGS,
     video: `${BASE_PRO_VIDEO_URL}Tadawl.mp4`,
     category: "prjection-mapping",
-    title: "Projection Mapping",
+    title: "Tadawl",
     description:
       "2 lines for project description here..Short 2 lines for project description here..",
   },

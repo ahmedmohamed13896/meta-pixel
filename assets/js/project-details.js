@@ -16,6 +16,7 @@ if (id) {
   const project = projects.find((pro) => pro.id == id);
   const container = document.querySelector(".grid");
   createVideoSrc(project);
+  SECTION_TITLE.innerHTML = project.title;
   project.images.map((img) => {
     const newProjectHTML = `
       <div class="box border-shadow" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="linear">

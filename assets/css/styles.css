@@ -18,6 +18,12 @@ body {
 .text-main {
     color: var(--main-color);
 }
+.text-gray-light {
+    color: var(--gray-light) !important;
+}
+.underline-none {
+    text-decoration: none !important;
+}
 
 .sec-title {
     color: var(--secondary-color);
@@ -241,6 +247,22 @@ hr.line {
 }
 
 /* about style */
+.home-page .about{
+    position: relative;
+}
+.home-page .about::before{
+    content: '';
+    height: 100px;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    top: calc(-80px + -3rem);
+    left: 0;
+    transform: translateY(0);
+    background: linear-gradient(to bottom,transparent 20%, var(
+    --background-dark) 80%);
+}
+
 .about .sec-title::after {
     content: 'About';
 }
@@ -309,6 +331,21 @@ hr.line {
     height: 100%;
     overflow: hidden;
     box-shadow: 0px 4px 15px 0px rgba(234, 221, 255, 0.2)
+}
+.projects-grid-container .box h4,
+.projects-grid-container .box p,
+.project-list .box h4,
+.project-list .box p{
+    color: var(--gray-light);
+    text-decoration: none;
+}
+.projects-grid-container .box,
+.project-list .box{
+    text-decoration: none;
+}
+.projects-grid-container .box span,
+.project-list .box span{
+    text-decoration: underline;
 }
 
 .projects-grid-container .box img {
