@@ -15,6 +15,7 @@ function createVideoSrc(project){
 if (id) {
   const project = projects.find((pro) => pro.id == id);
   const container = document.querySelector(".grid");
+  const description = document.querySelector(".description");
   createVideoSrc(project);
   SECTION_TITLE.innerHTML = project.title;
   project.images.map((img) => {
@@ -27,4 +28,10 @@ if (id) {
     `;
     container.insertAdjacentHTML("beforeend", newProjectHTML);
   });
+  const descriptionHTML = `
+  <h6 class="text-uppercase text-gray-md mb-4 m-plus-1p-bold video-title">Description</h6>
+  <p class="m-plus-1p-medium">${project.description}</p>
+  `;
+  description.innerHTML  = descriptionHTML
+  
 }

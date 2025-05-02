@@ -64,10 +64,20 @@
             <p class="m-plus-1p-medium text-uppercase header__subTitle">Where Every Event Becomes an <span
                     class="text-main">Unforgettable Spectacle!</span></p> 
         </div> -->
-        <video muted autoplay loop playsinline preload="auto" poster="./assets/images/poster.png">
-            <source src="./assets/videos/meta-demo_desktop-commpressed.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
+        <div class="video-wrap">
+            <video id="home_video" muted autoplay loop playsinline preload="auto" poster="./assets/images/poster.png">
+                <source src="./assets/videos/home.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="microphone microphone-off" onclick="toggleMicrophone()">
+                <img class="img-fluid" src="./assets/images/MicrophoneSlash.svg" alt="MicrophoneSlash">
+                <span>SOUND OFF</span>
+            </div>
+            <div class="microphone microphone-on" onclick="toggleMicrophone()">
+                <img class="img-fluid" src="./assets/images/Microphone.svg" alt="Microphone">
+                <span>SOUND ON</span>
+            </div>
+        </div>
     </header>
     <!-- About -->
     <section id="about" class="about bullet-section container-fluid px-sm-5 px-4">
@@ -251,11 +261,7 @@
                         <div class="px-3">
                             <h4 class="boya-alternative text-uppercase mt-3 card-title">Kendy</h4>
                             <div class="d-flex flex-column justify-content-between flex-grow-1 m-plus-1p-medium">
-                                <p class="mt-2 clamp-two-lines">2 lines for project description here..Short 2 lines
-                                    for
-                                    project
-                                    description
-                                    here..</p>
+                                <p class="mt-2 clamp-two-lines">The Saudi National Day 93 project in the Embassy District offers a unique celebration that showcases Saudi heritage through innovative content reflecting the Kingdom's evolution and culture. The project features interactive exhibits, live art performances, and cultural experiences that captivate the audience, bridging the past with the present, and allowing everyone to discover the spirit of Saudi Arabia and explore its future aspirations.</p>
                                 <div class="mb-4">
                                     <img src="./assets/images/ArrowRight.svg" alt="arrow" class="img-fluid">
                                     <span class="text-main m-plus-1p-bold link">View full
@@ -271,11 +277,7 @@
                         <div class="px-3">
                             <h4 class="boya-alternative text-uppercase mt-3 card-title">Rally</h4>
                             <div class="d-flex flex-column justify-content-between flex-grow-1 m-plus-1p-medium">
-                                <p class="mt-2 clamp-two-lines">2 lines for project description here..Short 2 lines
-                                    for
-                                    project
-                                    description
-                                    here..</p>
+                                <p class="mt-2 clamp-two-lines">The Hail Rally 2023 event offers an exciting journey through Hail’s rugged terrain, where precise route design meets high-speed adventure. Explore meticulously crafted tracks that challenge the limits of rallying while celebrating the region’s natural beauty. A unique blend of technology, sport, and culture, delivering a live rally experience for all.</p>
                                 <div class="mb-4">
                                     <img src="./assets/images/ArrowRight.svg" alt="arrow" class="img-fluid">
                                     <span href="./project.html?id=2" class="text-main m-plus-1p-bold link">View full
@@ -293,11 +295,7 @@
                         <div class="px-3">
                             <h4 class="boya-alternative text-uppercase mt-3 card-title">Zaabal</h4>
                             <div class="d-flex flex-column justify-content-between flex-grow-1 m-plus-1p-medium">
-                                <p class="mt-2 clamp-two-lines">2 lines for project description here..Short 2 lines
-                                    for
-                                    project
-                                    description
-                                    here..</p>
+                                <p class="mt-2 clamp-two-lines">Zaabal Castle at the Sadu Festival merges history with innovation, transforming the iconic Zaabal Castle into a dynamic, interactive digital experience. Through cutting-edge projection mapping and immersive technology, this installation brings Saudi Arabia’s rich heritage to life in a whole new way. Experience tradition reimagined in the heart of the Sadu Festival, where the past and future beautifully collide.</p>
                                 <div class="mb-4">
                                     <img src="./assets/images/ArrowRight.svg" alt="arrow" class="img-fluid">
                                     <span class="text-main m-plus-1p-bold link">View full
@@ -314,11 +312,7 @@
                         <div class="px-3">
                             <h4 class="boya-alternative text-uppercase mt-3 card-title">Zei Ein</h4>
                             <div class="d-flex flex-column justify-content-between flex-grow-1 m-plus-1p-medium">
-                                <p class="mt-2 clamp-two-lines">2 lines for project description here..Short 2 lines
-                                    for
-                                    project
-                                    description
-                                    here..</p>
+                                <p class="mt-2 clamp-two-lines">The Saudi Heritage Day Project Mapping Event at the Thee Ain building brings Saudi history to life with stunning visual projections using cutting-edge mapping technology. The building transforms into a living canvas, showcasing the Kingdom's rich culture, traditions, and artistry. A unique experience that blends heritage with innovation, celebrating Saudi Arabia’s past and future.</p>
                                 <div class="mb-4">
                                     <img src="./assets/images/ArrowRight.svg" alt="arrow" class="img-fluid">
                                     <span class="text-main m-plus-1p-bold link">View full
@@ -350,19 +344,18 @@
                         <ul class="list-none" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="linear">
                             <li class="d-flex align-items-center my-2">
                                 <img src="./assets/images/EnvelopeOpen.svg" alt="email" class="img-fluid">
-                                <span
-                                    class="px-2 m-plus-1p-bold text-uppercase contact_us-list__txt">hr@metapixel.com</span>
+                                <a href="mailto:HR@meta-pixels.com"
+                                    class="px-2 m-plus-1p-bold text-uppercase contact_us-list__txt">HR@meta-pixels.com</a>
                             </li>
                             <li class="d-flex align-items-center my-2">
                                 <img src="./assets/images/Phone.svg" alt="email" class="img-fluid">
-                                <span class="px-2 m-plus-1p-bold text-uppercase contact_us-list__txt">+00000000 -
-                                    0000000</span>
+                                <a href="tel:+201094984800" class="px-2 m-plus-1p-bold text-uppercase contact_us-list__txt">+201094984800</a>
                             </li>
                             <li class="d-flex align-items-center my-2">
-                                <img src="./assets/images/MapPinLine.svg" alt="email" class="img-fluid">
-                                <span class="px-2 m-plus-1p-bold text-uppercase contact_us-list__txt">Abd El-Salam Aref,
-                                    San
-                                    Stefano, El Raml 1, Alexandria Governorate,Egypt</span>
+                                <a target="_blank" class="contact_us-list__txt d-flex align-items-start" href="https://www.google.com/maps/place/230+Abd+El-Salam+Aref,+San+Stefano,+El+Raml+1,+Alexandria+Governorate+5452057/@31.2497186,29.9715579,16z/data=!4m6!3m5!1s0x14f5c53370b70211:0xb1562c2e1b359734!8m2!3d31.2497186!4d29.9715579!16s%2Fg%2F11c1k3l7_4">
+                                    <img src="./assets/images/MapPinLine.svg" alt="email" class="img-fluid">
+                                    <span class="px-2 m-plus-1p-bold text-uppercase contact_us-list__txt">230 Abd Elsalam Aref Lurant Alexandria Al Alaalamya Group Tower Floor 11 Meta Pixel Company</span>
+                                </a>
                             </li>
 
                         </ul>

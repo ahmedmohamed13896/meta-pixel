@@ -2,6 +2,7 @@ const NAV_BAR = document.querySelector(".navbar");
 const HEADER = document.querySelector(".header-wrapper");
 const MAIN_NAV = document.querySelector("#main_navbar");
 const NAV_TOGGLER = document.querySelector(".navbar-toggler");
+const HOME_VIDEO = document.getElementById("home_video");
 const SECTION_PROJECTS = document.querySelector(".project-details");
 const SECTION_PROJECT_DETAILS = document.querySelector(".project-wrap");
 const SECTION_SERVICES_DETAILS = document.querySelector(".services-details");
@@ -74,7 +75,7 @@ const projects = [
     category: "prjection-mapping",
     title: "Kendy",
     description:
-      "2 lines for project description here..Short 2 lines for project description here..",
+      "The Saudi National Day 93 project in the Embassy District offers a unique celebration that showcases Saudi heritage through innovative content reflecting the Kingdom's evolution and culture. The project features interactive exhibits, live art performances, and cultural experiences that captivate the audience, bridging the past with the present, and allowing everyone to discover the spirit of Saudi Arabia and explore its future aspirations.",
   },
   {
     id: 2,
@@ -84,7 +85,7 @@ const projects = [
     category: "stage-design",
     title: "Rally",
     description:
-      "2 lines for project description here..Short 2 lines for project description here..",
+      "The Hail Rally 2023 event offers an exciting journey through Hail’s rugged terrain, where precise route design meets high-speed adventure. Explore meticulously crafted tracks that challenge the limits of rallying while celebrating the region’s natural beauty. A unique blend of technology, sport, and culture, delivering a live rally experience for all.",
   },
   {
     id: 3,
@@ -94,7 +95,7 @@ const projects = [
     category: "content-creation",
     title: "Zaabal",
     description:
-      "2 lines for project description here..Short 2 lines for project description here..",
+      "Zaabal Castle at the Sadu Festival merges history with innovation, transforming the iconic Zaabal Castle into a dynamic, interactive digital experience. Through cutting-edge projection mapping and immersive technology, this installation brings Saudi Arabia’s rich heritage to life in a whole new way. Experience tradition reimagined in the heart of the Sadu Festival, where the past and future beautifully collide.",
   },
   {
     id: 4,
@@ -104,7 +105,7 @@ const projects = [
     category: "3d-animation",
     title: "Ze Ein",
     description:
-      "2 lines for project description here..Short 2 lines for project description here..",
+      "The Saudi Heritage Day Project Mapping Event at the Thee Ain building brings Saudi history to life with stunning visual projections using cutting-edge mapping technology. The building transforms into a living canvas, showcasing the Kingdom's rich culture, traditions, and artistry. A unique experience that blends heritage with innovation, celebrating Saudi Arabia’s past and future.",
   },
   {
     id: 5,
@@ -114,7 +115,7 @@ const projects = [
     category: "hologram",
     title: "Aqwan",
     description:
-      "2 lines for project description here..Short 2 lines for project description here..",
+      "On Farasan Beach in Jazan, Event Akwan offers an innovative visual experience where nature transforms into interactive art. Using advanced mapping technology, the beach becomes a vibrant stage telling rich stories of the Kingdom’s beauty and heritage. A unique blend of creativity and technology, creating a captivating and inspiring experience for all.",
   },
   {
     id: 6,
@@ -124,7 +125,7 @@ const projects = [
     category: "vfx",
     title: "Asr W 7rfa",
     description:
-      "2 lines for project description here..Short 2 lines for project description here..",
+      "this project, we revive traditional crafts that are an essential part of the Kingdom's cultural identity. The project aims to preserve these crafts and pass them on to future generations in an innovative way",
   },
   {
     id: 7,
@@ -134,7 +135,7 @@ const projects = [
     category: "hologram",
     title: "Camel",
     description:
-      "2 lines for project description here..Short 2 lines for project description here..",
+      "Celebrate Saudi Heritage Day at Camel Rock in the Al-Jawf region, where history and culture converge in a breathtaking landscape. This project brings the Kingdom's rich traditions to life, offering a unique blend of heritage and modern storytelling.",
   },
   {
     id: 8,
@@ -144,7 +145,7 @@ const projects = [
     category: "3d-animation",
     title: "Emara",
     description:
-      "2 lines for project description here..Short 2 lines for project description here..",
+      "Celebrate Saudi Heritage Day at the iconic Emirate Palace in Najran, where the Kingdom's rich cultural heritage is honored in a stunning historical setting. This event blends tradition with innovation, creating a memorable experience that showcases Saudi Arabia’s timeless legacy.",
   },
   {
     id: 9,
@@ -154,7 +155,7 @@ const projects = [
     category: "content-creation",
     title: "Qshla",
     description:
-      "2 lines for project description here..Short 2 lines for project description here..",
+      "Celebrate Saudi Heritage Day at the historic Al-Qashla Palace in the Hail region, where the Kingdom’s cultural richness is brought to life in a majestic setting. This event merges tradition with modernity, offering a unique experience that honors Saudi Arabia's timeless heritage.",
   },
   {
     id: 10,
@@ -164,7 +165,7 @@ const projects = [
     category: "stage-design",
     title: "El Sor",
     description:
-      "2 lines for project description here..Short 2 lines for project description here..",
+      "celebrate Saudi Heritage Day in Al-Sour, Yanbu, the project offers a unique cultural experience that honors the Kingdom’s rich history and heritage. Through interactive displays and innovative content, it bridges the past and present, highlighting the timeless beauty and spirit of Saudi Arabia.",
   },
   {
     id: 11,
@@ -174,6 +175,6 @@ const projects = [
     category: "prjection-mapping",
     title: "Tadawl",
     description:
-      "2 lines for project description here..Short 2 lines for project description here..",
+      "An exclusive event was organized for a group of leading trading companies in Saudi Arabia, fostering collaboration and innovation among participants. This gathering created exceptional opportunities for networking and partnerships, contributing to the growth of the Kingdom's business landscape.",
   },
 ];
