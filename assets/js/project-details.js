@@ -1,15 +1,55 @@
 const params = new URLSearchParams(window.location.search);
 const id = params.get("id");
 const VIDEO = document.getElementById("video");
-const VIDEO_SRC = document.createElement("source");
+
+// Flag to prevent double loading
+let videoLoaded = false;
+let videoSourceAdded = false;
 
 function createVideoSrc(project){
-    VIDEO_SRC.src = project.video;
-    VIDEO_SRC.setAttribute("src", project.video);
-    VIDEO_SRC.setAttribute("type", "video/mp4");
-    VIDEO.appendChild(VIDEO_SRC);
-    VIDEO.load();
-  
+    // Lazy load: Only load video when user clicks play or video enters viewport
+    const loadVideo = () => {
+        // Prevent double loading
+        if (videoLoaded) {
+            return;
+        }
+        videoLoaded = true;
+        
+        // Only add source element when we actually want to load
+        if (!videoSourceAdded) {
+            const VIDEO_SRC = document.createElement("source");
+            VIDEO_SRC.setAttribute("src", project.video);
+            VIDEO_SRC.setAttribute("type", "video/mp4");
+            VIDEO.appendChild(VIDEO_SRC);
+            videoSourceAdded = true;
+        }
+        
+        // Load the video
+        VIDEO.load();
+    };
+    
+    // Load when user clicks play button
+    VIDEO.addEventListener('play', () => {
+        loadVideo();
+    }, { once: true });
+    
+    // Load when video enters viewport (Intersection Observer)
+    // Use smaller rootMargin to avoid loading too early
+    if ('IntersectionObserver' in window) {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting && !videoLoaded) {
+                    loadVideo();
+                    observer.disconnect();
+                }
+            });
+        }, { rootMargin: '50px' }); // Reduced from 100px to 50px
+        
+        observer.observe(VIDEO);
+    } else {
+        // Fallback: Load immediately if IntersectionObserver not supported
+        loadVideo();
+    }
 }
 
 if (id) {

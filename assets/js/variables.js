@@ -24,47 +24,47 @@ let intervalId;
 const BASE_IMG_URL = "./assets/images/project-details/";
 const BASE_PRO_VIDEO_URL = "./assets/videos/";
 const PROJECT_CONTAINERS = document.querySelectorAll(".box-img-wrapper");
-const PROJECT_KENDY_IMGS = ["kendy1.jpg", "kendy2.jpg", "kendy3.jpg"];
+const PROJECT_KENDY_IMGS = ["kendy1.webp", "kendy2.webp", "kendy3.webp"];
 const PROJECT_RALLY_IMGS = [
-  "rally1.jpg",
-  "rally2.jpg",
-  "rally3.jpg",
-  "rally4.jpg",
-  "rally5.jpg",
+  "rally1.webp",
+  "rally2.webp",
+  "rally3.webp",
+  "rally4.webp",
+  "rally5.webp",
 ];
-const PROJECT_ZAABAL_IMGS = ["zaabal1.jpg", "zaabal2.jpg", "zaabal3.jpg"];
-const PROJECT_ZEEIN_IMGS = ["ze-ein1.jpg", "ze-ein2.jpg", "ze-ein3.jpg"];
+const PROJECT_ZAABAL_IMGS = ["zaabal1.webp", "zaabal2.webp", "zaabal3.webp"];
+const PROJECT_ZEEIN_IMGS = ["ze-ein1.webp", "ze-ein2.webp", "ze-ein3.webp"];
 const PROJECT_AQWAN_IMGS = [
-  "aqwan1.jpg",
-  "aqwan2.jpg",
-  "aqwan3.jpg",
-  "aqwan4.jpg",
+  "aqwan1.webp",
+  "aqwan2.webp",
+  "aqwan3.webp",
+  "aqwan4.webp",
 ];
 const PROJECT_ASR_HERFA_IMGS = [
-  "asr-herfa1.jpg",
-  "asr-herfa2.jpg",
-  "asr-herfa3.jpg",
-  "asr-herfa4.jpg",
+  "asr-herfa1.webp",
+  "asr-herfa2.webp",
+  "asr-herfa3.webp",
+  "asr-herfa4.webp",
 ];
 const PROJECT_CAMEL_IMGS = [
-  "camel1.jpg",
-  "camel2.jpg",
-  "camel3.jpg",
-  "camel4.jpg",
-  "camel5.jpg",
-  "camel6.jpg",
-  "camel7.jpg",
-  "camel8.jpg",
-  "camel9.jpg",
-  "camel10.jpg",
-  "camel11.jpg",
-  "camel12.jpg",
+  "camel1.webp",
+  "camel2.webp",
+  "camel3.webp",
+  "camel4.webp",
+  "camel5.webp",
+  "camel6.webp",
+  "camel7.webp",
+  "camel8.webp",
+  "camel9.webp",
+  "camel10.webp",
+  "camel11.webp",
+  "camel12.webp",
 ];
 
-const PROJECT_EMARA_IMGS = ["emara1.jpg", "emara2.jpg", "emara3.jpg"];
-const PROJECT_QSHLA_IMGS = ["qshla1.jpg", "qshla2.jpg", "qshla3.jpg"];
-const PROJECT_SOR_IMGS = ["sor1.jpg", "sor2.jpg", "sor3.jpg", "sor4.jpg"];
-const PROJECT_TADAWL_IMGS = ["tadawl1.jpg"];
+const PROJECT_EMARA_IMGS = ["emara1.webp", "emara2.webp", "emara3.webp"];
+const PROJECT_QSHLA_IMGS = ["qshla1.webp", "qshla2.webp", "qshla3.webp"];
+const PROJECT_SOR_IMGS = ["sor1.webp", "sor2.webp", "sor3.webp", "sor4.webp"];
+const PROJECT_TADAWL_IMGS = ["tadawl1.webp"];
 
 const projects = [
   {
