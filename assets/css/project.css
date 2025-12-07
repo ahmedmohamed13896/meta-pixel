@@ -38,7 +38,7 @@
 
 .responsive-video {
     position: relative;
-    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    padding-bottom: 56.25%; /* 16:9 aspect ratio - default */
     height: 0;
     overflow: hidden;
     max-width: 100%;
@@ -51,5 +51,37 @@
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+/* Vimeo embed in project pages */
+.responsive-video .project-vimeo-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    padding-top: var(--vimeo-padding, 56.15%);
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.responsive-video .vimeo-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Hide engagement buttons area - positioned where Vimeo typically shows them */
+.responsive-video .project-vimeo-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Additional CSS to try hiding engagement elements */
+.responsive-video .vimeo-wrapper {
+    position: relative;
 }
 

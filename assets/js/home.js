@@ -8,13 +8,37 @@ PROJECT_CONTAINERS.forEach((imgContainer) => {
     });
 });
 
-function toggleMicrophone(){
-  if(HOME_VIDEO.muted){
-    document.querySelector('.microphone-on').style.display = 'flex';
-    document.querySelector('.microphone-off').style.display = 'none';
-  }else{
-    document.querySelector('.microphone-off').style.display = 'flex';
-    document.querySelector('.microphone-on').style.display = 'none';
+// Vimeo player instance
+let vimeoPlayer = null;
+
+// Initialize Vimeo player when API is ready
+document.addEventListener('DOMContentLoaded', function() {
+  if (typeof Vimeo !== 'undefined') {
+    const iframe = document.querySelector('.video-wrap iframe');
+    if (iframe) {
+      vimeoPlayer = new Vimeo.Player(iframe);
+    }
   }
-  HOME_VIDEO.muted = !HOME_VIDEO.muted ;
+});
+
+function toggleMicrophone(){
+  if (!vimeoPlayer) {
+    // Fallback if Vimeo player not initialized
+    return;
+  }
+  
+  vimeoPlayer.getMuted().then(function(muted) {
+    if (muted) {
+      // Unmute
+      vimeoPlayer.setVolume(1);
+      vimeoPlayer.setMuted(false);
+      document.querySelector('.microphone-on').style.display = 'flex';
+      document.querySelector('.microphone-off').style.display = 'none';
+    } else {
+      // Mute
+      vimeoPlayer.setMuted(true);
+      document.querySelector('.microphone-off').style.display = 'flex';
+      document.querySelector('.microphone-on').style.display = 'none';
+    }
+  });
 }

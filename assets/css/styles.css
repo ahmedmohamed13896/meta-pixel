@@ -212,7 +212,7 @@ hr.line {
 
 /* header style  */
 .header-wrapper {
-    height: 100vh;
+    height: fit-content;
     background: linear-gradient(180deg, rgb(0, 0, 0, .5) 2.69%, rgb(0, 0, 0, .5) 100%);
     background-position: center;
     background-size: cover;
@@ -235,6 +235,29 @@ hr.line {
     -ms-object-fit: cover;
     object-fit: cover;
     object-position: 50% 50%;
+}
+
+/* Vimeo embed wrapper */
+.vimeo-wrapper {
+    position: relative;
+    width: 100%;
+    padding-top: 56.15%;
+    /* Padding will be set inline for different aspect ratios */
+}
+
+/* Vimeo iframe */
+.vimeo-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Project page Vimeo wrapper */
+.responsive-video .vimeo-wrapper {
+    width: 100%;
 }
 .header-wrapper .video-wrap .microphone{
     position: absolute;
