@@ -118,3 +118,5 @@ After implementing the fixes:
 - If `.htaccess` doesn't work, contact GoDaddy support to enable these modules
 - Consider upgrading to a hosting plan with better performance if needed
 
+
+

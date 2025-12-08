@@ -2,6 +2,7 @@
 @import './fonts.css';
 html{
     overflow-x: hidden;
+    scroll-padding-top: 120px; /* Account for fixed navbar */
 }
 
 body {
@@ -159,7 +160,7 @@ hr.line {
 /* nav style */
 .navbar-custom {
     background-color: transparent;
-    z-index: 2;
+    z-index: 10;
     padding-top: .6rem;
     padding-bottom: .6rem;
 }
@@ -245,6 +246,34 @@ hr.line {
     /* Padding will be set inline for different aspect ratios */
 }
 
+/* Vimeo poster image */
+.vimeo-poster {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 3;
+    transition: opacity 0.5s ease-in-out;
+    display: block;
+}
+
+.vimeo-poster.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Hide Vimeo's built-in loader */
+.vimeo-wrapper iframe {
+    background: transparent;
+}
+
+/* Hide Vimeo loading spinner */
+.vimeo-wrapper::before {
+    display: none !important;
+}
+
 /* Vimeo iframe */
 .vimeo-iframe {
     position: absolute;
@@ -253,6 +282,19 @@ hr.line {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    z-index: 2;
+    background: transparent !important;
+}
+
+/* Hide Vimeo's built-in loading spinner and controls */
+.vimeo-wrapper iframe[src*="vimeo"] {
+    background: transparent !important;
+}
+
+/* Hide any Vimeo loading elements */
+.vimeo-wrapper::before,
+.vimeo-wrapper::after {
+    display: none !important;
 }
 
 /* Project page Vimeo wrapper */
@@ -263,7 +305,7 @@ hr.line {
     position: absolute;
     right: 2rem;
     bottom: 2rem;
-    z-index: 2;
+    z-index: 3;
     cursor: pointer;
     color: #FFF;
     font-size: 1rem;
@@ -296,7 +338,7 @@ hr.line {
     height: 100px;
     width: 100%;
     position: absolute;
-    z-index: 1;
+    z-index: 2;
     top: calc(-80px + -3rem);
     left: 0;
     transform: translateY(0);
@@ -626,7 +668,7 @@ footer .bullet-wrap {
 
 /* Fade In Background */
 .fadeInBackground {
-    animation: fadeInBg 1s ease-in-out forwards;
+    animation: fadeInBg .3s ease-in-out forwards;
 }
 
 

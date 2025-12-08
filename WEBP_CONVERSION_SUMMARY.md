@@ -76,3 +76,5 @@ WebP is supported by:
 - All image references in HTML and JavaScript have been updated
 - The conversion script can be run again if new images are added
 
+
+

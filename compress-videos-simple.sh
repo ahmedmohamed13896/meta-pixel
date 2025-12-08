@@ -98,3 +98,5 @@ total_savings=$(echo "scale=1; (1 - $total_new / $total_original) * 100" | bc)
 echo "Total savings: ${total_savings}%"
 echo "========================"
 
+
+

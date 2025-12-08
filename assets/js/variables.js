@@ -18,7 +18,7 @@ const FILTER_ITEMS = document.querySelectorAll(".filter-item");
 const NAV_COLLAPSE = document.querySelector(".navbar-collapse");
 const SECTION_TITLE = document.querySelector('.sec-title')
 const NAV_HEIGHT = 100;
-let SELECTED_FILTERS = ["prjection-mapping"];
+let SELECTED_FILTERS = [];
 const LOADER = document.querySelector(".loader_section");
 let currentIndex = 0;
 let intervalId;

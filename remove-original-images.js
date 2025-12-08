@@ -132,3 +132,5 @@ async function removeOriginalImages() {
 // Run the script
 removeOriginalImages().catch(console.error);
 
+
+

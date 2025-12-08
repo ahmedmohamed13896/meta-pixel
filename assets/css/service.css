@@ -15,6 +15,7 @@
 /* services-list style  */
 .services-list > div{
     cursor: default;
+    scroll-margin-top: 120px; /* Offset for fixed navbar when scrolling to anchor */
 }
 .services-list > div .line{
     transition: opacity .5s ease-in-out;
